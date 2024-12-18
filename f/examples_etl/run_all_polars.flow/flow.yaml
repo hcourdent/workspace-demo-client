@@ -1,0 +1,233 @@
+summary: Example ETL with TPC-H using Polars and Windmill S3 integration
+description: >-
+  ETL pipeline leveraging Windmill S3 integration and Polars. 
+
+
+  WARNING: this entire flow takes around 30s of compute with `scale_factor =
+  10m`, and 90s with `scale_factor = 500m` (thus up to 15% of your free tier)
+
+
+  This ETL first reads raw CSV files from S3, converts them to Parquet files and
+  write them back to S3 (this is the first for loop). It then runs various
+  queries on the different datasets and write the result of the queries to S3.
+  Files be visualized from the bucket explorer available on each run step.
+
+
+  Detailed documentation on how to implement ETLs with Windmill can be found
+  https://www.windmill.dev/docs/core_concepts/persistent_storage#large-data-files-s3-r2-minio
+  and a dedicated blog post is also available here
+  https://www.windmill.dev/docs/core_concepts/data_pipelines.
+
+
+  Note: for security reasons, the S3 bucket is in read-only mode, and therefore
+  the "write back to S3" steps have been commented in the code.
+value:
+  modules:
+    - id: o
+      value:
+        type: forloopflow
+        modules:
+          - id: p
+            summary: Format CSV file path in S3
+            value:
+              type: rawscript
+              content: '!inline format_csv_file_path_in_s3.inline_script.py'
+              input_transforms:
+                dataset_name:
+                  type: javascript
+                  expr: flow_input.iter.value
+                scale_factor:
+                  type: javascript
+                  expr: flow_input.scale_factor
+              lock: ''
+              language: python3
+          - id: r
+            summary: Convert CSV files to Parquet
+            value:
+              type: rawscript
+              content: '!inline convert_csv_files_to_parquet.inline_script.py'
+              input_transforms:
+                s3_file:
+                  type: javascript
+                  expr: results.p
+                scale_factor:
+                  type: javascript
+                  expr: flow_input.scale_factor
+              lock: '!inline convert_csv_files_to_parquet.inline_script.lock'
+              language: python3
+              tag: ''
+        iterator:
+          type: javascript
+          expr: |-
+            [
+              "nation", 
+              "region", 
+              "part", 
+              "supplier", 
+              "partsupp", 
+              "customer",
+              "orders",
+              "lineitem"
+            ]
+        parallel: true
+        parallelism: 4
+        skip_failures: false
+    - id: a
+      summary: ''
+      value:
+        type: branchall
+        branches:
+          - summary: Query 1 & 3
+            modules:
+              - id: s
+                summary: Query 1
+                value:
+                  type: rawscript
+                  content: '!inline query_1.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_1.inline_script.lock'
+                  language: python3
+                  tag: ''
+              - id: t
+                summary: Query 3
+                value:
+                  type: rawscript
+                  content: '!inline query_3.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_3.inline_script.lock'
+                  language: python3
+                  tag: ''
+            expr: ''
+            parallel: true
+            skip_failure: false
+          - summary: Query 2
+            modules:
+              - id: u
+                summary: Query 2
+                value:
+                  type: rawscript
+                  content: '!inline query_2.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_2.inline_script.lock'
+                  language: python3
+                  tag: ''
+            expr: ''
+            parallel: true
+            skip_failure: false
+        parallel: true
+    - id: v
+      summary: Query 4
+      value:
+        type: rawscript
+        content: '!inline query_4.inline_script.py'
+        input_transforms:
+          scale_factor:
+            type: javascript
+            expr: flow_input.scale_factor
+        lock: '!inline query_4.inline_script.lock'
+        language: python3
+        tag: ''
+    - id: f
+      summary: ''
+      value:
+        type: branchall
+        branches:
+          - summary: Query 5 & 7 & 8
+            modules:
+              - id: w
+                summary: Query 5
+                value:
+                  type: rawscript
+                  content: '!inline query_5.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_5.inline_script.lock'
+                  language: python3
+                  tag: ''
+              - id: x
+                summary: Query 7
+                value:
+                  type: rawscript
+                  content: '!inline query_7.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_7.inline_script.lock'
+                  language: python3
+                  tag: ''
+              - id: 'y'
+                summary: Query 8
+                value:
+                  type: rawscript
+                  content: '!inline query_8.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_8.inline_script.lock'
+                  language: python3
+                  tag: ''
+            expr: ''
+            parallel: true
+            skip_failure: false
+          - summary: Query 6
+            modules:
+              - id: z
+                summary: Query 6
+                value:
+                  type: rawscript
+                  content: '!inline query_6.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_6.inline_script.lock'
+                  language: python3
+                  tag: ''
+            expr: ''
+            parallel: true
+            skip_failure: false
+          - summary: Query 9
+            modules:
+              - id: aa
+                summary: Query 9
+                value:
+                  type: rawscript
+                  content: '!inline query_9.inline_script.py'
+                  input_transforms:
+                    scale_factor:
+                      type: javascript
+                      expr: flow_input.scale_factor
+                  lock: '!inline query_9.inline_script.lock'
+                  language: python3
+                  tag: ''
+            expr: ''
+            parallel: true
+            skip_failure: false
+        parallel: true
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order:
+    - scale_factor
+  properties:
+    scale_factor:
+      type: string
+      description: ''
+      default: 10m
+      enum:
+        - 10m
+        - 500m
+  required: []

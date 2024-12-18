@@ -1,0 +1,17 @@
+summary: |-
+
+  Load display S3 file content
+description: ''
+lock: '!inline f/all/load_display_s3_file_content.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    input_file:
+      type: object
+      description: ''
+      default: null
+      format: resource-s3_object
+  required:
+    - input_file

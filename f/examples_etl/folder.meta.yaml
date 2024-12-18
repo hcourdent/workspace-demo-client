@@ -1,0 +1,7 @@
+summary: null
+display_name: examples_etl
+extra_perms:
+  g/all: false
+  u/henri: true
+owners:
+  - u/henri

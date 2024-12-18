@@ -1,0 +1,184 @@
+summary: ''
+description: ''
+value:
+  modules:
+    - id: c
+      summary: Fetch top stories from Hacker News API
+      value:
+        type: rawscript
+        content: '!inline fetch_top_stories_from_hacker_news_api.inline_script.py'
+        input_transforms:
+          num_stories:
+            type: javascript
+            expr: flow_input.number_of_stories
+        lock: '!inline fetch_top_stories_from_hacker_news_api.inline_script.lock'
+        is_trigger: false
+        language: python3
+    - id: d
+      value:
+        type: forloopflow
+        modules:
+          - id: f
+            summary: ''
+            value:
+              type: branchone
+              branches:
+                - summary: ''
+                  modules:
+                    - id: g
+                      summary: |-
+
+                        Return object with text choice
+                      value:
+                        type: rawscript
+                        content: |-
+                          !inline 
+                          return_object_with_text_choice.inline_script.ts
+                        input_transforms:
+                          x:
+                            type: static
+                            value: Yet another blog post
+                        lock: |-
+                          !inline 
+                          return_object_with_text_choice.inline_script.lock
+                        is_trigger: false
+                        language: bun
+                  expr: flow_input.iter.value.url.includes("blog")
+                  parallel: true
+                  skip_failure: true
+              default:
+                - id: e
+                  summary: Extract first 300 words from webpage
+                  value:
+                    type: script
+                    input_transforms:
+                      url:
+                        type: javascript
+                        value: ''
+                        expr: flow_input.iter.value.url
+                    hash: 73496b409d923a18
+                    is_trigger: false
+                    path: u/henri/demo_flow/e
+                - id: b
+                  summary: Create completion (openai)
+                  value:
+                    type: script
+                    input_transforms:
+                      auth:
+                        type: static
+                        value: '$res:u/henri/demo_open_ai'
+                      body:
+                        type: javascript
+                        expr: |-
+                          ({
+                              "echo": false,
+                              "stream": false,
+                              "suffix": "",
+                              "model": "gpt-3.5-turbo-instruct",
+                              "prompt": "Here is an extract of a web page, sum it up in a short paragraph" + results.e,
+                              "user": "",
+                              "max_tokens": 1000
+                          })
+                    is_trigger: false
+                    path: hub/7932/openai/create_completion
+        iterator:
+          type: javascript
+          expr: results.c
+        parallel: false
+        skip_failures: true
+    - id: h
+      summary: Ask channel for approval (slack)
+      value:
+        type: script
+        input_transforms:
+          channel:
+            type: static
+            value: test
+          slack:
+            type: static
+            value: '$res:u/henri/personal_slack'
+          text:
+            type: javascript
+            expr: >-
+              `Hello you! Here are the 3 trending stories on HackerNews: \n\n 1.
+              ` + results.c[0].title + `\nSummary: ` +
+              results.d[0].choices[0].text + `\n\n 2. ` + results.c[1].title +
+              `\nSummary: ` + results.d[1].choices[0].text + `\n\n 3. ` +
+              results.c[2].title + `\nSummary: ` + results.d[2].choices[0].text
+              + `\n\n Approve or decline`
+        is_trigger: false
+        path: hub/2439/slack/ask_channel_for_approval
+      continue_on_error: false
+      suspend:
+        hide_cancel: false
+        required_events: 1
+        resume_form:
+          schema:
+            order:
+              - satisfied
+            properties:
+              satisfied:
+                type: number
+                default: 0
+                max: 10
+                min: 0
+            required: []
+        timeout: 1800
+    - id: a
+      value:
+        type: script
+        input_transforms:
+          channel:
+            type: static
+            value: test
+          message:
+            type: javascript
+            expr: >-
+              `Hello team! Here are the 3 trending stories on HackerNews: \n\n
+              1. ` + results.c[0].title + `\nSummary: ` +
+              results.d[0].choices[0].text + `\n\n 2. ` + results.c[1].title +
+              `\nSummary: ` + results.d[1].choices[0].text + `\n\n 3. ` +
+              results.c[2].title + `\nSummary: ` + results.d[2].choices[0].text
+              + `\n\nSatisfied:` + resume["satisfied"]
+          slack:
+            type: static
+            value: '$res:u/henri/personal_slack'
+        is_trigger: false
+        path: u/henri/slack_message
+      continue_on_error: false
+  failure_module:
+    id: failure
+    value:
+      type: rawscript
+      content: >
+
+        export async function main(message: string, name: string, step_id:
+        string) {
+          const flow_id = Deno.env.get("WM_ROOT_FLOW_JOB_ID")
+          console.log("message", message)
+          console.log("name",name)
+          console.log("step_id", step_id)
+          return { message, flow_id, step_id, recover: false }
+        }
+      input_transforms:
+        name:
+          type: javascript
+          expr: error.name
+        message:
+          type: javascript
+          expr: error.message
+        step_id:
+          type: javascript
+          expr: error.step_id
+      is_trigger: false
+      language: deno
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order:
+    - number_of_stories
+  properties:
+    number_of_stories:
+      type: number
+      description: ''
+  required: []

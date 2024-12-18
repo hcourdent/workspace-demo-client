@@ -1,0 +1,34 @@
+summary: Send message Slack channel using WebClient
+description: ''
+lock: '!inline u/henri/slack_message.script.lock'
+concurrency_time_window_s: 0
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order:
+    - slack
+    - channel
+    - message
+  properties:
+    channel:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+      placeholder: test
+      title: Your favorite channel
+    message:
+      type: string
+      description: 'What you want to say :)'
+      default: null
+      originalType: string
+    slack:
+      type: object
+      description: ''
+      default: null
+      format: resource-slack
+  required:
+    - slack
+    - channel
+    - message

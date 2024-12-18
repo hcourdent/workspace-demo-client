@@ -1,0 +1,14 @@
+summary: Workflow as code
+description: ''
+lock: '!inline f/data_team/workflow_as_code.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    'n':
+      type: integer
+      description: ''
+      default: null
+  required:
+    - 'n'

@@ -1,0 +1,21 @@
+summary: Fetch data from Notion database
+description: ''
+lock: '!inline u/henri/fetch_from_notion.script.lock'
+kind: script
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    databaseId:
+      type: string
+      description: ''
+      default: null
+      originalType: string
+    notion:
+      type: object
+      description: ''
+      default: null
+      format: resource-notion
+  required:
+    - notion
+    - databaseId

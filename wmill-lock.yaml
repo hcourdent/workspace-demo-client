@@ -1,0 +1,26 @@
+locks:
+  f/all/fascinating_script: 3e635ab2c2244eeab62aeab56c0b96b3b598e59b7ec9024aa7f494f4605443de
+  f/all/load_display_s3_file_content: 0d119382eeeaf1833ad81e02ca9eca09b835c7790a29c26b2a460d26cb1c010e
+  f/data_team/workflow_as_code: 48529bfe482f8b3663beeb9b260c4db3c0b4361397e82231eaf989274e24a748
+  f/examples_etl/run_all_polars.flow:
+    __flow_hash: faf999a9d9907e51d85450ee23f6a5d68f2bfe85d402549951cab6c33a0d2f35
+    convert_csv_files_to_parquet.inline_script.py: 379d161b7ccac27ba391e785340d8163f4c62a7b1d28c69e3f5764d89157dc7d
+    format_csv_file_path_in_s3.inline_script.py: 3012e221b5b0dd6504bf11be84e93d48826285abb9cdaf1ecb7694ce42acec23
+    query_1.inline_script.py: 979a3130511822a7d38ce29d8166ec9e248ef3478055a242fdd816d86f9130b1
+    query_2.inline_script.py: dc4379e99910149a043116f8d8e2a47edfcd879fb4d6a5b6ce4622facb657df0
+    query_3.inline_script.py: 9033641307cd296c8afa4f203360eb774ae495e8e93925edb7ef1f495654a438
+    query_4.inline_script.py: 7c64a740be192adbd2f298f16917ec1cf00fa64245ab1dd68ef8f5d5ee4c480b
+    query_5.inline_script.py: a74b688aff47084bb38760bc7a7e9d691480b3b29cd69962897bb63a1c88e09a
+    query_6.inline_script.py: 0b586624baa895be36b41658d03f0ee028ed4ff67b340c7ad6fe7017060d0480
+    query_7.inline_script.py: 322b90f74c8d05c76d0c63432864dda2816981161c5e0ab7d23a42ff2f259c5b
+    query_8.inline_script.py: b54ed7569c5d178863776c00b2efe6dda0755fd8bcfd269310fad09c7aa04bc5
+    query_9.inline_script.py: 070744d763d7e9e0c5f3766594315107a3d33f0d8a2bcaaf7129a50dd643180a
+  u/henri/demo_flow.flow:
+    "\nreturn_object_with_text_choice.inline_script.ts": 664d4df2c7720403196cca7a7227145ea3200c033bf26237b87ce8bc242ac487
+    __flow_hash: a775924a551f48e3685ff9e4b7502295cf66124599f26389cfb516a042b5c86d
+    fetch_top_stories_from_hacker_news_api.inline_script.py: 342b35659411b1f40ba7924dcd4ad32ddec847cf2b196e11877fc5b1ef38f838
+  u/henri/demo_flow/e: 195f0267ff312f73de94fd7a561ae2d3c18588d24aeb085ebf45339437e1bca8
+  u/henri/fetch_from_notion: 0a4794e4fcae01e7e541de65d2160e5ef02d70f6ae1d6d23817e61527d5c829d
+  u/henri/slack_message: d4d3dce5ceeb5b66ade6c2459a7ef67129d3080e6af85291695520cc6fa7dbe7
+  u/hugo/covid_hospitalisations: 434f1a284b9114f98507835364c276f6ecc231e8e3879b6d667ce406555bb805
+  u/hugo/total_spend_per_customer: d9ed89accf7792e02378b1c0d39e4c7ec35b12357741b031a1dd5c38e84dadc1

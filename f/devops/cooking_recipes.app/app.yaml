@@ -1,0 +1,3921 @@
+summary: Cooking recipes
+value:
+  css:
+    aggridcomponent:
+      container:
+        class: ''
+        style: ''
+    buttoncomponent:
+      button:
+        class: ''
+        style: ''
+      container:
+        class: ''
+        style: ''
+    containercomponent:
+      container:
+        class: ''
+        style: ''
+    iconcomponent:
+      container:
+        class: ''
+        style: ''
+      icon:
+        class: ''
+        style: ''
+    imagecomponent:
+      image:
+        class: ''
+        style: ''
+    schemaformcomponent:
+      description:
+        class: ''
+        style: ''
+      container:
+        class: ''
+        style: ''
+      label:
+        class: ''
+        style: ''
+    selectcomponent:
+      input:
+        class: ''
+        style: ''
+        tooltip: >-
+          https://github.com/rob-balfre/svelte-select/blob/master/docs/theming_variables.md
+    tablecomponent:
+      container: {}
+      tableBody: {}
+      tableFooter: {}
+      tableHeader: {}
+    textareainputcomponent:
+      input:
+        class: ''
+        style: ''
+    textcomponent:
+      container:
+        class: ''
+        style: ''
+      text:
+        class: ''
+        style: ''
+    textinputcomponent:
+      input: {}
+  darkMode: false
+  fullscreen: false
+  grid:
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 3
+        x: 0
+        'y': 0
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 1
+        x: 2
+        'y': 10
+      id: m
+      data:
+        id: m
+        type: textcomponent
+        componentInput:
+          type: templatev2
+          connections: []
+          eval: Available recipes
+          fieldType: template
+        configuration:
+          copyButton:
+            type: static
+            value: false
+          style:
+            type: static
+            value: Title
+          tooltip:
+            type: static
+            value: ''
+        customCss:
+          container:
+            class: ''
+            style: ''
+          text:
+            class: ''
+            style: ''
+        horizontalAlignment: left
+        verticalAlignment: top
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 2
+        x: 3
+        'y': 0
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 1
+        x: 0
+        'y': 11
+      id: h
+      data:
+        id: h
+        type: textcomponent
+        componentInput:
+          type: templatev2
+          connections: []
+          eval: Select cuisine
+          fieldType: template
+        configuration:
+          copyButton:
+            type: static
+            value: false
+          style:
+            type: static
+            value: Subtitle
+          tooltip:
+            type: static
+            value: ''
+        customCss:
+          container:
+            class: ''
+            style: ''
+          text:
+            class: ''
+            style: ''
+        horizontalAlignment: right
+        verticalAlignment: center
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 2
+        x: 5
+        'y': 0
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 1
+        w: 2
+        x: 0
+        'y': 10
+      id: g
+      data:
+        id: g
+        type: selectcomponent
+        configuration:
+          create:
+            type: static
+            value: false
+          defaultValue:
+            type: static
+            connections: []
+            expr: ''
+          disabled:
+            type: static
+            value: false
+          fullWidth:
+            type: static
+            value: true
+          items:
+            type: static
+            value:
+              - value: All
+                label: "All \U0001F30D"
+              - value: Asian
+                label: "Asian \U0001F35C"
+              - value: American
+                label: "American \U0001F354"
+              - value: Italian
+                label: "Italian \U0001F355"
+          placeholder:
+            type: static
+            value: Select an item
+          preselectFirst:
+            type: static
+            value: true
+        customCss:
+          input:
+            class: ''
+            style: ''
+            tooltip: >-
+              https://github.com/rob-balfre/svelte-select/blob/master/docs/theming_variables.md
+        recomputeIds: []
+        verticalAlignment: center
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 12
+        w: 5
+        x: 7
+        'y': 0
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 8
+        w: 2
+        x: 0
+        'y': 14
+      id: c
+      data:
+        id: c
+        type: containercomponent
+        configuration: {}
+        customCss:
+          container:
+            class: |-
+              bg-gray-50
+              rounded
+            style: ''
+        numberOfSubgrids: 1
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 11
+        w: 7
+        x: 0
+        'y': 1
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 10
+        w: 3
+        x: 0
+        'y': 0
+      id: a
+      data:
+        id: a
+        type: aggridcomponent
+        actions: []
+        componentInput:
+          type: runnable
+          value:
+            - id: 1
+              description: ''
+              calories: 465
+              carbohydrate: 84 g
+              cholesterol: 8 mg
+              cookTime: 25
+              cost: ''
+              course: Main Course
+              cuisine: Asian
+              directions: >-
+                Place rice in a fine mesh strainer and rinse under cold water
+                until water runs clear (it will take about 2 minutes of
+                rinsing). Tap bottom of strainer with palm of your hand until
+                water no longer falls from strainer (it should be well drained).
+                Transfer rice to a medium saucepan along with 2 1/4 cups water.
+                Bring mixture to a full boil then reduce heat to low, cover with
+                lid and simmer 15 minutes. Remove from heat, keep covered and
+                let rest 15 minutes.
+
+                Meanwhile, in a small saucepan combine 4 Tbsp of the vinegar
+                with the sugar and salt. Heat over medium heat, cook and whisk
+                until sugar has dissolved. Remove from heat, let cool while rice
+                is resting then pour vinegar mixture over rice and toss to
+                evenly coat.
+
+                In a small mixing bowl whisk together mayonnaise with sriracha.
+                Thin with 1 1/2 tsp of water if desired. Transfer to a sandwich
+                size resealable bag. Set aside.
+
+                In a small mixing bowl whisk together soy sauce and remaining 1
+                Tbsp vinegar, set aside. In a large mixing bowl gently toss
+                together crab meat, cucumber, carrots, nori, ginger and avocado.
+                Divide prepared rice among 4 or 5 bowls. Top with crab mixture
+                then spoon soy sauce mixture over top of each serving. Cut a
+                small tip from one corner of the resealable bag holding the
+                sriracha mixture, drizzle over each serving. Serve immediately.
+
+                Recipe source: adapted with changes from Whole Foods
+              fat: 8 g
+              fiber: 6 g
+              ingredients: >-
+                2 cups dry California Calrose Sushi Rice
+
+                5 Tbsp rice vinegar, (, divided)
+
+                2 Tbsp granulated sugar
+
+                1/2 tsp salt
+
+                1/4 cup light mayonnaise
+
+                1 1/2 Tbsp sriracha
+
+                1/4 cup low-sodium soy sauce
+
+                10 oz imitation crab, or lump crabmeat, (, torn or chopped into
+                small bite size pieces)
+
+                1 1/2 cups diced English cucumber
+
+                3/4 cup roughly chopped matchstick carrots
+
+                1 nori sheet (, chopped or crumbled into small pieces (add more
+                if you'd like))
+
+                1 1/2 Tbsp chopped pickled sushi ginger
+
+                1 large avocado, (, peeled and diced)
+
+                Black and toasted sesame seeds, (, for garnish)
+              mainIngredient: Vegetables
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687583/d99596b7acb8758e6d878ada11c36bd83c704cf4-original.jpg?1535321755
+              prepTime: 15
+              private: 'no'
+              protein: 10 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687583'
+              rating: ''
+              servings: 5
+              sodium: 1185 mg
+              source: 'https://www.cookingclassy.com/california-roll-sushi-bowls/'
+              sugar: 9 g
+              tags: 'Easy, Salad'
+              title: California Roll Sushi Bowls
+              totalTime: 40
+              url: 'https://www.cookingclassy.com/california-roll-sushi-bowls/'
+              urlHost: cookingclassy.com
+              yield: 5
+            - id: 2
+              description: ''
+              calories: 280
+              carbohydrate: 36g
+              cholesterol: 25mg
+              cookTime: 20
+              cost: ''
+              course: Main Course
+              cuisine: American
+              directions: >-
+                Toss lettuce, dressing, cheese, chicken, and croutons in a large
+                bowl until everything is lightly coated with dressing. Add
+                tomatoes and lightly toss again. Place salad mixture in the
+                middle of the wrap, wrap up tightly and serve!
+              fat: 8g
+              fiber: 12%
+              ingredients: >-
+                2-3 c. romaine lettuce
+
+                Caesar dressing, (to taste.. the better the dressing, the better
+                your wrap will be.. personally I like Brianna's bran
+
+                1/3 c. Parmesan cheese, (freshly grated)
+
+                1 chicken breast, (cooked & diced)
+
+                croutons, (coarsely chopped)
+
+                diced tomatoes, (lightly salted)
+
+                2-3 tortilla wraps, (burrito sized, we like the herb flavored
+                kind)
+              mainIngredient: Chicken
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687602/ba918c2550fd60a3f56da6cc510eb24b56752f63-original.jpg?1535321822
+              prepTime: 0
+              private: 'no'
+              protein: 15g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687602'
+              rating: ''
+              servings: 4
+              sodium: 580mg
+              source: 'https://www.favfamilyrecipes.com/chicken-caesar-wraps/'
+              sugar: 2g
+              tags: 'Chicken, Quick, Cheap'
+              title: Chicken Caesar Wraps
+              totalTime: 20
+              url: 'https://www.favfamilyrecipes.com/chicken-caesar-wraps/'
+              urlHost: favfamilyrecipes.com
+              yield: ''
+            - id: 3
+              description: ''
+              calories: 410
+              carbohydrate: 54g
+              cholesterol: 5mg
+              cookTime: 5
+              cost: ''
+              course: Main Course
+              cuisine: American
+              directions: >-
+                In a small food processor, blend together the avocado, Greek
+                yogurt, lime juice, and taco seasoning until smooth. Set aside.
+
+                Set out tortillas and fill with a hearty dollop of hummus.
+
+                Add your fresh toppings.
+
+                Top with avocado cream.
+
+                Garnish with sprouts.
+
+                Enjoy!
+              fat: 18g
+              fiber: 52%
+              ingredients: |-
+                For Avocado Cream
+                1/2 avocado
+                1 cup plain Greek Yogurt
+                1 lime, (juiced)
+                1 teaspoon homemade taco seasoning
+                For Tacos
+                8 whole wheat tortillas
+                1 cup roasted red pepper hummus
+                1 cup grape tomatoes, (diced)
+                1 small cucumber, (diced)
+                1 bell pepper, (diced)
+                1/2 cup black beans
+                1/2 cup frozen corn, (thawed)
+                1 cup greens, (shredded)
+                1/2 cup fresh sprouts, or microgreens
+                1/2 avocado, (diced)
+              mainIngredient: Vegetables
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687702/089722a277be198555dd6c9c1f08476cc3b8eab3-original.jpg?1535322539
+              prepTime: 5
+              private: 'no'
+              protein: 14g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687702'
+              rating: ''
+              servings: 4
+              sodium: 680mg
+              source: 'https://emilykylenutrition.com/vegetarian-hummus-tacos/'
+              sugar: 6g
+              tags: 'Vegan, Quick'
+              title: Vegetarian Tacos with Avocado Cream
+              totalTime: 10
+              url: 'https://emilykylenutrition.com/vegetarian-hummus-tacos/'
+              urlHost: emilykylenutrition.com
+              yield: ''
+            - id: 4
+              description: >-
+                Chicken And Lemon Risotto With Reduced Sodium Chicken Stock,
+                Butter, Boneless Skinless Chicken Breasts, Garlic, Lemon Juice,
+                Fresh Oregano, Onion, Arborio Rice, Frozen Peas, Grated Lemon
+                Peel, Grated Parmesan Cheese
+              calories: 560
+              carbohydrate: 69 g
+              cholesterol: 100  mg
+              cookTime: 55
+              cost: ''
+              course: Main Course
+              cuisine: Italian
+              directions: >-
+                Place the stock and 1/2 cup water in a medium saucepan. Bring to
+                a boil. Cover and reduce heat to low.
+
+                Meanwhile, melt 1/2 the butter in large saucepan on medium heat.
+                Add the chicken and cook until browned on both sides and just
+                cooked through. Add the garlic, lemon juice and oregano and
+                cook, stirring, until almost all the liquid has evaporated.
+                Remove the chicken from pan and keep warm.
+
+                Melt the remaining butter in the same pan. Add the onion and
+                cook, stirring, until soft. Add the rice, stirring to coat it in
+                the buttery juices. Reduce heat to medium-low. Add a ladleful of
+                hot stock to rice mixture; stir constantly until liquid is
+                absorbed. Continue to add stock, 1 ladleful at a time, stirring
+                constantly until liquid is absorbed before adding more (this
+                will take about 35 mins or until rice is tender but firm to the
+                bite). After 30 mins, stir in the peas.
+
+                Add the lemon peel, cheese, and salt and pepper to taste. Serve
+                the rice topped with chicken and additional Parmesan shavings,
+                if desired.
+              fat: 15 g
+              fiber: 5 g
+              ingredients: |-
+                4 cups reduced sodium chicken stock
+                3 tablespoons butter
+                1 pound boneless skinless chicken breasts larger pieces halved
+                2 cloves garlic crushed
+                1/4 cup lemon juice
+                2 tablespoons fresh oregano coarsely chopped
+                1 onion medium, finely chopped
+                1 1/2 cups arborio rice
+                3/4 cup frozen peas
+                2 teaspoons grated lemon peel finely
+                1/4 cup grated parmesan cheese finely
+              mainIngredient: Rice & Grains
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687774/ff717e9ea9e725eb270c6f4b58d38716164bb5cf-original.jpg?1535322745
+              prepTime: 0
+              private: 'no'
+              protein: 36 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687774'
+              rating: ''
+              servings: 4
+              sodium: 870  mg
+              source: 'https://www.yummly.com/recipe/Chicken-and-Lemon-Risotto-1407363'
+              sugar: 3 g
+              tags: Chicken
+              title: Chicken and Lemon Risotto
+              totalTime: 55
+              url: 'https://www.yummly.com/recipe/Chicken-and-Lemon-Risotto-1407363'
+              urlHost: yummly.com
+              yield: 4 servings
+            - id: 5
+              description: >-
+                Chicken, Broccoli Risotto With Arborio Rice, Dry White Wine,
+                Chicken Stock, Leek, Butter, Parmesan Cheese, Chicken Breast,
+                Broccoli, Medium Carrot, Olive Oil
+              calories: 400
+              carbohydrate: 43 g
+              cholesterol: 45  mg
+              cookTime: 30
+              cost: ''
+              course: Main Course
+              cuisine: Italian
+              directions: >-
+                Heat chicken stock and keep hot over low heat.
+
+                In medium sauce pan heat butter; add half the leek and sauté
+                until transparent.
+
+                Add rice and sauté, stirring, for 2 – 3 minutes until rice has
+                white center.
+
+                Add white wine and stir.
+
+                Start condimenti.
+
+                When wine is almost absorbed add a 1/3 cup of stock, stir.  (No
+                need to stir constantly but do stir from time to time.)
+
+                When stock is almost absorbed add another 1/3 cup and continue
+                adding 1/3 cup at a time and stirring.  Before adding the last
+                1/4 cup taste a few kernels of rice.  They should be just ‘al
+                dente’ – slightly resistant to the tooth, but fully cooked.  If
+                more stock is needed add it 1/8 cup at a time and waiting until
+                almost completely absorbed.  At this point risotto will be thick
+                but not stiff – there will still be visible liquid and it will
+                not hold it’s shape on a plate.
+
+                Add the Parmesan, Condimenti, and stir gently.
+
+                Spoon into a bowl or risotto platter and serve.
+
+                Condimenti:
+
+                Heat oil in a medium skillet, add remaining half leek and sauté
+                until transparent.
+
+                Add chicken, broccoli, carrot and sauté 5  – 7 minutes.
+
+                Add 1/4 cup of hot stock, cover, reduce heat and cook until
+                vegetables are tender and chicken done.
+
+                Remove from heat and keep warm until needed.
+              fat: 14 g
+              fiber: 4 g
+              ingredients: >-
+                2/3 cup arborio rice 4.2oz, 125gr, or other rice specifically
+                for risotto – Carnaroli or Vialone Nano
+
+                1/2 cup dry white wine 4oz, 120ml
+
+                2 1/4 cups chicken stock 18oz, 540ml
+
+                1 leek medium, trimmed and sliced, divided
+
+                1 tablespoon butter
+
+                3/4 cup parmesan cheese 3oz, 90gr, – freshly grated
+
+                1 chicken breast boneless, skinless, cut into small pieces
+
+                1/2 head broccoli cut into florets with stem
+
+                1 medium carrot cut into matchsticks
+
+                1 tablespoon olive oil
+              mainIngredient: Rice & Grains
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687800/9bac872caee028022ce69dce2f6ec1fe57b51b3f-original.jpg?1535322905
+              prepTime: 0
+              private: 'no'
+              protein: 22 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687800'
+              rating: ''
+              servings: 4
+              sodium: 590  mg
+              source: 'https://www.yummly.com/recipe/Chicken_-Broccoli-Risotto-2035794'
+              sugar: 6 g
+              tags: Chicken
+              title: 'Chicken, Broccoli Risotto'
+              totalTime: 30
+              url: 'https://www.yummly.com/recipe/Chicken_-Broccoli-Risotto-2035794'
+              urlHost: yummly.com
+              yield: ''
+            - id: 8
+              description: Healthy No-Bake Peanut Butter Pretzel Bars.
+              calories: 240
+              carbohydrate: 26g
+              cholesterol: ''
+              cookTime: 0
+              cost: ''
+              course: Snacks and Sandwiches
+              cuisine: American
+              directions: >-
+                In a large bowl, stir together the banana mash, peanut butter
+                and agave until well combined. Add in the oats and chia seeds
+                and stir well. Fold in the pretzel pieces.
+
+                Press the mixture evenly into the bottom of an 8x8 inch pan
+                lined with parchment paper.
+
+                Chill in the freezer for 20 minutes before cutting into 9
+                squares and serving.
+              fat: 13g
+              fiber: 5g
+              ingredients: |-
+                1 mashed banana, ripe
+                3/4 c peanut butter
+                1/4 c agave
+                2 1/2 c rolled oats, (gluten-free)
+                1/4 c pretzels pieces, (gluten-free)
+                1 tbsp chia seeds
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16687930/cf62d2d92c4accd37c7238f93735181d1dcfbe98-original.jpg?1535323385
+              prepTime: 5
+              private: 'no'
+              protein: 9g
+              publicUrl: 'https://www.plantoeat.com/recipes/16687930'
+              rating: ''
+              servings: 9
+              sodium: 130mg
+              source: >-
+                http://peanutbutterpluschocolate.com/healthy-no-bake-peanut-butter_pretzel-granola-bars/
+              sugar: 4g
+              tags: 'Dessert, Snack'
+              title: Healthy No Bake Peanut Butter Pretzel Granola Bars
+              totalTime: 5
+              url: >-
+                http://peanutbutterpluschocolate.com/healthy-no-bake-peanut-butter_pretzel-granola-bars/
+              urlHost: peanutbutterpluschocolate.com
+              yield: ''
+            - id: 11
+              description: ''
+              calories: 283
+              carbohydrate: 32 g
+              cholesterol: 32 mg
+              cookTime: 6
+              cost: ''
+              course: Main Course
+              cuisine: American
+              directions: >-
+                In a small bowl, combine chile powder, cumin and 1/4 tsp salt.
+                Heat oil in a large nonstick skillet to medium-high. Tilt
+                skillet to coat bottom lightly. Season both sides of chicken
+                with chile-cumin mixture and cook for 3 minutes per side or
+                until no longer pink in center. Remove from skillet and set
+                aside.
+
+                Add orange juice and maple syrup to juice and bits left in
+                skillet and cook for 1 minute to thicken slightly (until it
+                measures 1/4 cup liquid), stirring constantly. Remove from heat,
+                stir in chipotle chiles in adobo sauce and orange zest. Add
+                chicken back to skillet, return to heat and cook for 1 minute on
+                medium-high, turning constantly.
+
+                In a medium bowl, combine rice, cilantro and remaining 1/4 tsp
+                salt. Serve chicken over rice and spoon any excess glaze over
+                top chicken pieces.
+              fat: 4 g
+              fiber: 2 g
+              ingredients: >-
+                1 tsp chile powder
+
+                1/2 tsp ground cumin
+
+                1/2 tsp sea salt, divided
+
+                1 tsp safflower oil
+
+                4 boneless, skinless chicken breasts, (about 1 lb) rinsed and
+                patted dry, pounded 1/2-inch thick
+
+                Juice 1 medium navel orange, (1/3 cup orange juice)
+
+                2 tbsp pure maple syrup
+
+                1 tbsp chopped chipotle chiles in adobo sauce
+
+                1 tsp orange zest
+
+                2 cups cooked brown rice
+
+                1/4 packed cup chopped cilantro leaves
+              mainIngredient: Poultry
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16727990/a03bff7a41182945fde5f0eff18c57db9765dd4b-original.jpg?1535642619
+              prepTime: 10
+              private: 'no'
+              protein: 29 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16727990'
+              rating: ''
+              servings: 4
+              sodium: 337 mg
+              source: >-
+                https://www.cleaneatingmag.com/recipes/orange-chipotle-chicken-with-cilantro-rice
+              sugar: 8 g
+              tags: 'Chicken, Budget Friendly'
+              title: Orange Chipotle Chicken with Cilantro Rice
+              totalTime: 16
+              url: >-
+                https://www.cleaneatingmag.com/recipes/orange-chipotle-chicken-with-cilantro-rice
+              urlHost: cleaneatingmag.com
+              yield: 4
+            - id: 14
+              description: >-
+                Sweet, crunchy shrimp are stir-fried with crunchy, sweet cashew
+                nuts in this classic Chinese dish that's perfect for week night
+                dinners.
+              calories: 311
+              carbohydrate: 12 g
+              cholesterol: 285 mg
+              cookTime: 5
+              cost: ''
+              course: Main Course
+              cuisine: Asian
+              directions: >-
+                In a small bowl, mix together the soy sauce, rice wine vinegar,
+                brown sugar, oyster sauce, and sesame oil. Set aside.
+
+                Heat the vegetable oil in a wok or large skillet over high heat
+                and add the shrimp and stir fry until pink (about 2 minutes).
+                Remove from wok and set aside.
+
+                Using the same pan, add in the garlic and ginger and stir to
+                combine. Cook for about a minute.
+
+                Pour in the sherry. Stir it around, scraping the bottom of the
+                pan to loosen all the flavorful bits that may have stuck to the
+                wok. Cook for about 2 minutes to cook off the alcohol.
+
+                Turn the heat to medium-low and pour in the sauce mixture, then
+                mix in the cornstarch mixture. Stir the sauce for 1 to 2 minutes
+                to thicken, then add the cashews and stir to coat everything
+                with the sauce. You can add a little water if the sauce looks
+                too thick. Add the shrimp to the sauce.
+
+                Sprinkle on the green onions. Serve with cooked rice.
+              fat: 16 g
+              fiber: ''
+              ingredients: >-
+                1/4 cup Low Sodium Soy Sauce, ( or regular soy sauce)
+
+                1 Tablespoon Rice Wine Vinegar
+
+                1 Tablespoon Packed Brown Sugar
+
+                2 Tablespoons Oyster Sauce
+
+                1/2 teaspoon Toasted Sesame Oil
+
+                3 Tablespoons Vegetable Oil
+
+                1 pound shrimp, (cleaned and seasoned with a little salt &
+                pepper)
+
+                3 cloves garlic, (chopped)
+
+                Ground white pepper to taste, (you can use black if need be)
+
+                1 inch piece fresh ginger, (peeled & grated)
+
+                1/4 cup Sherry
+
+                2 Tablespoons Cornstarch, (mixed well with ¼ cup of cold water
+                until smooth)
+
+                1 cup Cashews, (Unsalted )
+
+                2 Green Onions, (Sliced)
+
+                Cooked Rice for Serving
+              mainIngredient: Fish
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16728055/950c003fa1f523ac1b2e0dcea2aa0c74d5176fe2-original.jpg?1535642937
+              prepTime: 5
+              private: 'no'
+              protein: 25 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16728055'
+              rating: ''
+              servings: 4
+              sodium: 1662 mg
+              source: 'https://www.errenskitchen.com/10-minute-cashew-shrimp/'
+              sugar: 3 g
+              tags: 'Easy, Quick'
+              title: 10 Minute Cashew Shrimp
+              totalTime: 10
+              url: 'https://www.errenskitchen.com/10-minute-cashew-shrimp/'
+              urlHost: errenskitchen.com
+              yield: 4 servings
+            - id: 15
+              description: >-
+                Boneless skinless chicken Breasts quickly baked in an intensely
+                flavoured honey, garlic and Dijon mustard glaze.
+              calories: 302
+              carbohydrate: 25 g
+              cholesterol: 95 mg
+              cookTime: 30
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Line an 8x8 inch baking pan with aluminum foil. Use a baking pan
+                that is large enough to have a half inch of space around each
+                chicken breast but no more. Using too large a baking dish can
+                cause the glaze to be too shallow in the pan and burn easily.
+                Place the empty pan in a 425 degree oven to heat up while you
+                prepare the glaze.
+
+                , To prepare the glaze
+
+                Melt the butter in a small saute pan. Add the garlic and cook
+                for only 30-60 seconds to soften it. Do not brown the garlic.
+
+                Add the honey, Dijon mustard and a pinch of salt and pepper.
+                Stir well to blend and simmer over medium heat for one or two
+                minutes begin to reduce the glaze.
+
+                Lightly season the chicken breasts with salt and pepper. Remove
+                the hot pan from the oven and place the chicken breasts an equal
+                distance apart in the pan. Pour the hot glaze evenly over the
+                chicken.
+
+                Return the pan to the 425 degree F oven and bake for 15 minutes.
+                Remove from oven and baste the breasts with the glaze in the
+                bottom of the pan. return to the oven for an additional 15-20
+                minutes or until a neat thermometer inserted into the center of
+                the thickest part of the breast reads 170 degrees F.
+
+                Allow the chicken to rest for 5 minutes before serving.
+              fat: 11 g
+              fiber: ''
+              ingredients: |-
+                4 large boneless skinless chicken breasts, (about 6 ounces each)
+                3 tbsp butter
+                6 cloves minced garlic
+                pinch salt and pepper
+                1/3 cup honey
+                2 tbsp whole grain Dijon mustard
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741465/cb14c2a77dbf7875b41d1f84fc73974ffa0b5c4f-original.jpg?1535738019
+              prepTime: 10
+              private: 'no'
+              protein: 24 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741465'
+              rating: ''
+              servings: 4
+              sodium: 294 mg
+              source: 'http://www.rockrecipes.com/honey-dijon-garlic-chicken-breasts'
+              sugar: 23 g
+              tags: ''
+              title: Honey Dijon Garlic Chicken Breasts
+              totalTime: 40
+              url: 'http://www.rockrecipes.com/honey-dijon-garlic-chicken-breasts'
+              urlHost: rockrecipes.com
+              yield: 4
+            - id: 19
+              description: >-
+                Parmesan Chicken Foil Packets contain a complete dinner in one
+                tidy little packet! Fresh summer zucchini, zesty tomato sauce
+                and tender chicken breasts are grilled until perfectly cooked
+                and topped with melty mozzarella cheese. This is going to become
+                your favorite summer meal!
+              calories: 530
+              carbohydrate: 15 g
+              cholesterol: 158 mg
+              cookTime: 20
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat grill to medium heat. Spray four 12x18 inch foil pieces
+                with cooking spray.
+
+                Divide zucchini over the four pieces of foil. Sprinkle with
+                salt, pepper and italian seasoning to taste and 2T parmesan
+                cheese.
+
+                Add 1/3 cup pasta sauce on top of the zucchini. Place a chicken
+                breast on top of the sauce.
+
+                Drizzle each chicken breast with olive oil then sprinkle with
+                garlic powder, italian seasoning, salt and pepper.
+
+                Seal each packet. Place on heated grill with the chicken side
+                down. Grill for 8 minutes.
+
+                Flip each packet and continue to grill for another 8-10 minutes
+                or until juice run clear and chicken reaches 165 degrees.
+
+                Open each packet by slicing with a knife. Sprinkle 1/4 cup
+                mozzarella cheese on each chicken breast and heat to melt. (see
+                note)
+
+                If desired, cook pasta according to package directions and heat
+                remaining sauce.
+
+                Remove the chicken and zucchini from each packet and place on
+                top of the pasta. Pour any extra sauce from the packet on top as
+                well.
+
+                Sprinkle with freshly grated parmesan and garnish with fresh
+                parsley.
+              fat: 23 g
+              fiber: 4 g
+              ingredients: |-
+                4 chicken breasts, (boneless, skinless)
+                3 cups pasta sauce
+                2 zucchini, (sliced)
+                1/2 cup parmesan cheese, (shredded)
+                1 cup mozzarella cheese, (shredded)
+                1 teaspoon garlic powder
+                1 teaspoon Italian seasoning, (sprinkle)
+                salt & pepper, (to taste)
+                1/4 cup olive oil
+                spaghetti, (cooked)
+                parsley, (freshly chopped)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741530/65401f6583473d28beed9b6c4bc62cb559c642d9-original.jpg?1535738244
+              prepTime: 15
+              private: 'no'
+              protein: 65 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741530'
+              rating: ''
+              servings: 4
+              sodium: 1643 mg
+              source: 'https://www.spendwithpennies.com/parmesan-chicken-foil-packets/'
+              sugar: 10 g
+              tags: ''
+              title: Chicken Parmesan Foil Packets
+              totalTime: 35
+              url: 'https://www.spendwithpennies.com/parmesan-chicken-foil-packets/'
+              urlHost: spendwithpennies.com
+              yield: 4 servings
+            - id: 20
+              description: >-
+                These bacon ranch chicken foil packets are a super easy dinner
+                option with minimal cleanup! Chicken breasts are cooked with
+                potatoes and ranch flavored butter, then topped with melted
+                cheese and bacon for a meal that's sure to please any crowd.
+              calories: 510
+              carbohydrate: 22 g
+              cholesterol: 161 mg
+              cookTime: 45
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat the oven to 425 degrees or a grill over medium high
+                heat. In a small bowl whisk together the butter, ranch
+                seasoning, and salt and pepper to taste.
+
+                Coat 4 large squares of foil with cooking spray.
+
+                Place the potatoes in a bowl and drizzle with 4 tablespoons of
+                the ranch butter over the top. Toss to coat evenly.
+
+                Place a chicken breast onto each of the foil squares and season
+                with salt and pepper to taste. Divide the potatoes evenly among
+                the 4 foil squares and arrange them around the chicken.
+
+                Drizzle the remaining 2 tablespoons of butter over the chicken
+                breasts. Fold the edges of the foil over the chicken and
+                potatoes to make a packet.
+
+                Bake for 45 minutes or grill for 30 minutes. Open the packets
+                and sprinkle the cheese over the chicken and potatoes. Leave the
+                packets open and return to the oven or grill for 2-3 minutes or
+                until cheese melts. Sprinkle with bacon and parsley and serve.
+              fat: 28 g
+              fiber: 1 g
+              ingredients: |-
+                6 tablespoons butter, (melted)
+                2 tablespoons ranch seasoning powder
+                salt and pepper to taste
+                4 medium sized chicken breasts, (approximately 4 ounces each)
+                1 pound small red potatoes, (halved or quartered)
+                nonstick cooking spray
+                1 cup shredded cheddar cheese
+                4 slices bacon, (cooked and crumbled)
+                2 tablespoons chopped parsley
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741543/2723c77dddd87110bf898093050f741a8c9c167e-original.jpg?1535738282
+              prepTime: 15
+              private: 'no'
+              protein: 36 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741543'
+              rating: ''
+              servings: 4
+              sodium: 785 mg
+              source: 'https://www.dinneratthezoo.com/bacon-ranch-chicken-foil-packets/'
+              sugar: 1 g
+              tags: ''
+              title: Bacon Ranch Chicken Foil Packets
+              totalTime: 60
+              url: 'https://www.dinneratthezoo.com/bacon-ranch-chicken-foil-packets/'
+              urlHost: dinneratthezoo.com
+              yield: 4
+            - id: 22
+              description: >-
+                Easy Recipes, Slow Cooker Meals, Meal Planning & Meal PrepFoil
+                Packet Kielbasa Recipe. A simple meal of kielbasa sausage and
+                fresh garden yellow squash and zucchini, and mushrooms, lightly
+                seasoned, and cooked in Handi-Foil for the perfect, simple meal.
+                Insane flavor and only 5 minutes prep required.
+              calories: 247
+              carbohydrate: 6 g
+              cholesterol: 0 mg
+              cookTime: 35
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat oven to 375 or grill to 500
+
+                Lay foil out on a tray
+
+                Cut up sausage/kielbasa into rounds and squash and zucchini into
+                bit sized pieces.
+
+                Toss mushrooms, sausage, squash, olive oil, and seasoning in a
+                bowl and stir until coated
+
+                Divide amongst the foil, and fold foil up to form a sealed
+                packet
+
+                Bake on a tray for 35-40 minutes until fragrant and vegetables
+                are tender
+
+                Or Grill for approximately 20 minutes, turning or flipping and
+                checking regularly.
+
+                Enjoy!
+              fat: 19 g
+              fiber: ''
+              ingredients: |-
+                1 lb beef sausage, or Kielbasa
+                2 cups chopped up yellow squash
+                2 cups chopped up zucchini
+                1 cup sliced white mushrooms
+                1 Tbs Montreal Steak Seasoning
+                1 Tbs olive oil
+                4 1 ft pieces of Handi-foil 12in wide
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741548/a18cd76afb2c2df21351a1301152fa6c25872e9b-original.jpg?1535738312
+              prepTime: 10
+              private: 'no'
+              protein: 17 mg
+              publicUrl: 'https://www.plantoeat.com/recipes/16741548'
+              rating: ''
+              servings: 5
+              sodium: 0 mg
+              source: 'https://www.eazypeazymealz.com/foil-packet-kielbasa-recipe/'
+              sugar: 0 g
+              tags: Main Dish
+              title: Foil Packet Kielbasa Recipe
+              totalTime: 45
+              url: 'https://www.eazypeazymealz.com/foil-packet-kielbasa-recipe/'
+              urlHost: eazypeazymealz.com
+              yield: 5
+            - id: 23
+              description: >-
+                This recipe makes 2 foil packets for two individuals. Double or
+                triple recipe as needed.
+              calories: 223
+              carbohydrate: 12.5 g
+              cholesterol: 62.1 mg
+              cookTime: 20
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Pre-heat oven to 400F.
+
+                In a large bowl combine or ziplock bag, combine all the
+                ingredients and mix until fully combined.
+
+                Cut and lay out 2 12x12 inch (app.) squares of aluminum foil on
+                a sheet pan. Place half the mixture on each foil and gently fold
+                the foil around ingredients to form a tight seal.
+
+                Bake for 20 minutes or until chicken is cooked through. Serve
+                with a side of rice or noodles.
+              fat: 9.9 g
+              fiber: 4 g
+              ingredients: |-
+                2 small (or 1 large chicken breasts cut into 1 inch cubes)
+                1 cup broccoli florets
+                1 cup bell peppers (sliced, or chopped (colors of choice))
+                1 small zucchini, (sliced)
+                1/2 cup tomatoes sliced into large chunks, (or grape tomatoes)
+                1/2 cup onion, (sliced or chopped)
+                1 tablespoon olive oil
+                1 tablespoon italian seasoning *, (see note)
+                1 teaspoon garlic powder, or fresh minced garlic
+                1 teaspoon paprika, (optional)
+                salt and pepper to taste
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741556/a0129418918200f952947787e20c5bcf0f17b05a-original.jpg?1535738327
+              prepTime: 10
+              private: 'no'
+              protein: 22.4 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741556'
+              rating: ''
+              servings: 2
+              sodium: 63.6 mg
+              source: >-
+                https://gimmedelicious.com/2016/10/16/easy-baked-italian-chicken-and-veggie-foil-packets/
+              sugar: 5.3 g
+              tags: ''
+              title: Easy Baked Italian Chicken and Veggie Foil Packets
+              totalTime: 30
+              url: >-
+                https://gimmedelicious.com/2016/10/16/easy-baked-italian-chicken-and-veggie-foil-packets/
+              urlHost: gimmedelicious.com
+              yield: 2
+            - id: 24
+              description: >-
+                An easy, healthy recipe for perfectly seasoned Grilled Chicken
+                Fajitas in Foil Packets. Foolproof and perfect for fast, healthy
+                dinners and summer cookouts.
+              calories: 118
+              carbohydrate: 6 g
+              cholesterol: 45 mg
+              cookTime: 10
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat the grill to medium/medium high (about 450 degrees F).
+                Place the chicken, bell peppers, onion, and zucchini in a large
+                bowl. Top with the lime juice, chili powder, cumin, garlic
+                powder, salt, onion powder, and cayenne. Toss to coat.Lay 6
+                large pieces of heavy-duty foil on the counter (if not using
+                heavy duty, use two pieces of regular foil stacked on top of
+                each other for each packet). Generously coat the foil with
+                nonstick spray. Divide the chicken and vegetables among the 6
+                pieces of foil, then wrap them to form packets: bring up 2 sides
+                of the foil so the edges meet. Seal the edges, making a tight
+                1/2-inch fold, then fold again, allowing space for heat to
+                circulate. Fold in the ends to seal.Grill for 8 to 12 minutes,
+                until the chicken is no longer pink in the center and the
+                vegetables are crisp-tender. Carefully open the foil and allow
+                steam to escape. Serve warm with tortillas and desired toppings.
+              fat: 1 g
+              fiber: 2 g
+              ingredients: >-
+                1 1/2 pounds Simple Truth Chicken Breasts, cut into 1/2-inch
+                strips
+
+                2 orange bell peppers, or red, yellow, , seeded and cut into
+                1/2-inch strips
+
+                1 red onion, seeded and cut into 1/2-inch slices
+
+                1 zucchini, cut into 1/4-inch rounds
+
+                3 tablespoons freshly squeezed lime juice
+
+                2 tablespoons chili powder
+
+                2 teaspoons ground cumin
+
+                2 teaspoons garlic powder
+
+                1 1/2 teaspoons kosher salt
+
+                1 teaspoon onion powder
+
+                1/4 teaspoon cayenne pepper
+
+                For serving: flour, or whole wheat tortillas, sour cream (or
+                plain Greek yogurt), shredded cheese, diced avocado, sliced
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741564/b4c14047d7e5cc7ad78ab99d30e09d802ee87b55-original.jpg?1535738350
+              prepTime: 10
+              private: 'no'
+              protein: 22 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741564'
+              rating: ''
+              servings: 6
+              sodium: 512 mg
+              source: 'https://www.wellplated.com/grilled-chicken-fajitas/'
+              sugar: 1 g
+              tags: ''
+              title: Grilled Chicken Fajitas
+              totalTime: 20
+              url: 'https://www.wellplated.com/grilled-chicken-fajitas/'
+              urlHost: wellplated.com
+              yield: 6 packets
+            - id: 26
+              description: >-
+                Caprese stuffed chicken foil packs&nbsp;can be cooked in the
+                oven, on the grill, or even over a campfire.
+                &nbsp;They're&nbsp;chicken breasts stuffed with tomato, basil,
+                mozzarella cheese, and balsamic vinegar; placed on top of
+                seasoned veggies; and wrapped up in foil packets.
+              calories: 324
+              carbohydrate: 10.8 g
+              cholesterol: ''
+              cookTime: 25
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat oven to 400 degrees F.
+
+                In a small bowl, add the mozzarella, sliced basil, halved
+                tomatoes, vinegar, 1/4 teaspoon salt, and 1/4 teaspoon pepper.
+                Gently mix to combine. Set aside.
+
+                Cut the ends off the zucchini. Cut it in half, lengthwise. Then,
+                cut it into 1/2 inch slices (making a half moon shape). Repeat
+                with the yellow squash.
+
+                Tear off two long pieces of aluminum foil (about 1 1/2 feet
+                each). Divide the zucchini and yellow squash between the two
+                pieces of foil, gathering the squash in the middle of each
+                sheet.
+
+                Drizzle the squash with the olive oil. Sprinkle the squash with
+                the Italian seasoning. Then, sprinkle with a pinch of salt and
+                pepper. Set aside.
+
+                Place one of the chicken breasts on a cutting board and cover it
+                with a piece of plastic wrap. Use a mallet to pound the chicken
+                thin and flat (about 1/2 inch thickness throughout). Repeat with
+                the other chicken breast.
+
+                Divide the tomato mixture between the two chicken breasts.
+                Arrange the tomato mixture in a strip 1 inch away from one of
+                the edges of the chicken. Starting with the edge closest to the
+                filling, roll the chicken around the filling. Use 2-3 toothpicks
+                to secure the seam. Try to keep the toothpicks from sticking too
+                far out of the chicken or else they could puncture the foil.
+
+                Place the stuffed chicken breasts on top of the squash piles.
+                Sprinkle each chicken breast with a pinch of salt and pepper.
+
+                Bring the longest ends of the foil up over the chicken and roll
+                them together. Then roll the short ends in, making sealed
+                packets. Place the packets on a large baking sheet.
+
+                Bake for 25 minutes, until the center of the chicken is 165
+                degrees F. Let them cool for 5 minutes.
+
+                Drizzle the chicken with extra balsamic vinegar before serving.
+              fat: 11.3 g
+              fiber: 3.2 g
+              ingredients: >-
+                2 oz. fresh mozzarella pearls, (or fresh mozzarella cut into 1/2
+                inch cubes)
+
+                1/4 cup thinly sliced fresh basil
+
+                10 cherry tomatoes, (halved)
+
+                2 tsp. balsamic vinegar
+
+                1/2 tsp. salt, (divided)
+
+                1/2 tsp. ground black pepper, (divided)
+
+                1 medium zucchini
+
+                1 medium yellow summer squash
+
+                1 tsp. olive oil
+
+                1/4 tsp. Italian seasoning
+
+                2 (6 oz.) chicken breasts
+
+                Optional: extra balsamic vinegar for serving
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741576/52685ed09eba1e16210929529e582d95e0a4db64-original.jpg?1535738379
+              prepTime: 20
+              private: 'no'
+              protein: 47.4 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741576'
+              rating: ''
+              servings: 2
+              sodium: ''
+              source: >-
+                https://www.thewholesomedish.com/caprese-stuffed-chicken-foil-packs/
+              sugar: ''
+              tags: ''
+              title: Caprese Stuffed Chicken Foil Packs Recipe
+              totalTime: 45
+              url: >-
+                https://www.thewholesomedish.com/caprese-stuffed-chicken-foil-packs/
+              urlHost: thewholesomedish.com
+              yield: 2 servings
+            - id: 27
+              description: >-
+                These make-ahead packs are perfect for camping trips as well as
+                quick and easy breakfasts on the go. Shredded potatoes and
+                flavorful sausage are topped with baked eggs and spinach for a
+                hearty morning meal.
+              calories: 228
+              carbohydrate: 15 g
+              cholesterol: 189 mg
+              cookTime: 10
+              cost: ''
+              course: Breakfast
+              cuisine: ''
+              directions: >-
+                Cut 12 (12x16") pieces of heavy-duty foil. Layer 2 pieces of
+                foil on top of each other to create 6 stacks. Line top pieces of
+                foil with parchment paper cut to the same size.
+
+                Toss scallions, potatoes, sausage, oil, salt, and pepper in a
+                large bowl. Divide mixture among prepared packs, arranging in
+                the center of each piece of parchment. Bring edges of foil
+                together to enclose each pack, covering completely, then crimp
+                to seal packs closed.
+
+                Prepare a campfire or grill for medium, indirect heat,
+                preferably with hardwood or hardwood charcoal. Let coals burn
+                until covered with ash and glowing red with no black remaining.
+
+                Place packs side by side directly onto hot coals or grill and
+                cook, rotating with tongs occasionally, about 5 minutes.
+                Carefully remove 1 pack from heat and check if ingredients are
+                steaming hot. If necessary, return pack to coals and continue to
+                cook, 5–10 minutes more.
+
+                Transfer packs with tongs to a flat surface and carefully open
+                them (they will be full of hot steam). Top each pack with
+                spinach, then crack 1 egg into the center of each and season
+                with salt and pepper. Reseal, return to coals, and cook until
+                egg whites are opaque but yolks are still runny, 4–5 minutes.
+
+                Carefully remove packs from coals, open, and sprinkle with
+                cheddar, if using. Serve immediately.
+
+                Packs can be assembled and chilled for up to 2 days or frozen
+                for up to 1 month.
+              fat: 15 g
+              fiber: 2 g
+              ingredients: >-
+                3 scallions, trimmed, sliced
+
+                1 (16-ounce) package frozen shredded hash brown potatoes,
+                defrosted
+
+                12 ounces cooked breakfast sausages, (about 16 sausage links)
+                cut into 3/4" pieces
+
+                1/4 cup olive oil
+
+                1 teaspoon kosher salt, plus more to taste
+
+                1/2 teaspoon freshly ground black pepper, plus more to taste
+
+                3 (packed) cups baby spinach
+
+                6 large eggs
+
+                1/2 cup shredded cheddar, (optional)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741583/c52d20c0556dd3ab6ab7a8b5021acc21f94e81b6-original.jpg?1535738394
+              prepTime: 0
+              private: 'no'
+              protein: 9 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741583'
+              rating: ''
+              servings: 6
+              sodium: 375 mg
+              source: >-
+                https://www.epicurious.com/recipes/food/views/breakfast-hobo-packs-with-hash-brown-potatoes-sausage-and-scallions-56389750
+              sugar: ''
+              tags: Egg
+              title: >-
+                Breakfast Hobo Packs with Hash Brown Potatoes, Sausage, and
+                Scallions
+              totalTime: 10
+              url: >-
+                https://www.epicurious.com/recipes/food/views/breakfast-hobo-packs-with-hash-brown-potatoes-sausage-and-scallions-56389750
+              urlHost: epicurious.com
+              yield: Serves 6
+            - id: 29
+              description: ''
+              calories: 322
+              carbohydrate: 30.5 g
+              cholesterol: 68.2 mg
+              cookTime: 30
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                *In a small mixing bowl combine peach preserves, dijon mustard,
+                sriracha, and garlic; mix and stir until thoroughly
+                incorporated.
+
+                Season pork tenderloin with salt and fresh ground pepper and
+                coat with the peach mixture.
+
+                Place the pork tenderloin on a large sheet of aluminum foil, cut
+                several slits across the top and insert peach slices in each
+                slit. Set aside.
+
+                Cut the new potatoes in half, place in a bowl, season with salt
+                and pepper, and toss with a tablespoon of olive oil.
+
+                Transfer potatoes to prepared foil, arranging them around the
+                pork tenderloin.
+
+                Seal the foil packet well and place in the refrigerator for an
+                hour or two.
+
+                Preheat your grill for 10-15 minutes with all the main burners
+                on high.
+
+                Remove prepared foil packet from refrigerator and let stand at
+                room temperature for about 15 minutes. DO NOT OPEN THE PACKET.
+
+                Place the foil packet over high heat on the grill; about 425
+                degrees F.
+
+                Cook for 25 to 30 minutes, turning, until internal temperature
+                of pork reaches at least 150 degrees F.
+
+                Remove from grill and let stand a few minutes.
+
+                Open up the packet and serve.
+              fat: 10.4 g
+              fiber: 2 g
+              ingredients: |-
+                1/4 cup sugar free peach preserves
+                1 tablespoon dijon mustard
+                1/2-1 teaspoon Sriracha
+                3 garlic cloves, (, minced)
+                1 peach, (, sliced)
+                1 pound pork tenderloin
+                salt and fresh ground pepper, (, to taste)
+                1-1/2 pounds new potatoes
+                1 tablespoon olive oil
+                3 garlic cloves, (, minced)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16741591/a663db4d25f2b3b84f49d940edd8f9aeae1742d1-original.jpg?1535738411
+              prepTime: 60
+              private: 'no'
+              protein: 28 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16741591'
+              rating: ''
+              servings: 1
+              sodium: 65 mg
+              source: >-
+                https://diethood.com/grilled-peach-glazed-pork-tenderloin-foil-packet-potatoes/
+              sugar: 1.2 g
+              tags: ''
+              title: Grilled Peach-Glazed Pork Tenderloin Foil Packet with Potatoes
+              totalTime: 90
+              url: >-
+                https://diethood.com/grilled-peach-glazed-pork-tenderloin-foil-packet-potatoes/
+              urlHost: diethood.com
+              yield: 1 g
+            - id: 33
+              description: >-
+                The wonderful homemade goodness of this creamy macaroni and
+                cheese makes it a staple side dish in my mother's kitchen and in
+                mine as well. It has tender noodles and a crowd-pleasing golden
+                crumb topping. -Maria Costello, Monroe, North Carolina
+              calories: 309
+              carbohydrate: 22g
+              cholesterol: 60mg
+              cookTime: 30
+              cost: ''
+              course: Side Dishes
+              cuisine: ''
+              directions: >-
+                Cook macaroni according to package directions. Meanwhile, in a
+                saucepan, melt 4 tablespoons butter over medium heat. Stir in
+                flour, salt and pepper until smooth. Gradually add milk. Bring
+                to a boil; cook and stir for 2 minutes or until thickened.
+                Reduce heat. Add the cheeses, stirring until cheese is melted.
+                Drain macaroni., Transfer macaroni to a greased 1-1/2-qt. baking
+                dish. Pour cheese sauce over macaroni; mix well. Melt the
+                remaining butter; add the bread crumbs. Sprinkle over top. Bake,
+                uncovered, at 375° for 30 minutes or until heated through and
+                topping is golden brown.
+              fat: 20g
+              fiber: 1g
+              ingredients: |-
+                1-1/2 cups uncooked elbow macaroni
+                5 tablespoons butter, divided
+                3 tablespoons all-purpose flour
+                1/2 teaspoon salt
+                1/4 teaspoon pepper
+                1-1/2 cups whole milk
+                1 cup shredded cheddar cheese
+                2 ounces process cheese, (Velveeta) cubed
+                2 tablespoons dry bread crumbs
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16821134/de74eb2cb5cf963ddddab6adf18de610ed56cf93-original.jpg?1536264588
+              prepTime: 30
+              private: 'no'
+              protein: 11g
+              publicUrl: 'https://www.plantoeat.com/recipes/16821134'
+              rating: ''
+              servings: 6
+              sodium: 569mg
+              source: 'https://www.tasteofhome.com/recipes/mom-s-macaroni-and-cheese/'
+              sugar: ''
+              tags: ''
+              title: Mom's Macaroni and Cheese
+              totalTime: 60
+              url: 'https://www.tasteofhome.com/recipes/mom-s-macaroni-and-cheese/'
+              urlHost: tasteofhome.com
+              yield: 6 servings.
+            - id: 34
+              description: >-
+                Healthy Mac and Cheese: one heaping cup of comfort food for just
+                350 calories. Simple, creamy, homemade goodness. So good!
+              calories: 350
+              carbohydrate: 61.8 g
+              cholesterol: 16.9 mg
+              cookTime: 40
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Cook the macaroni according to package directions. Drain and set
+                aside. Heat the butter in a large skillet over medium low heat.
+                Cut the onion into thin rings and add to the butter in the pan,
+                sauteing over low heat until fragrant and golden, about 20
+                minutes.
+
+                Meanwhile, remove the skin and the seeds from the squash. Cut
+                the flesh into small cubes. Bring the broth to a boil and add
+                the squash. Cook for 5-7 minutes or until fork tender. Drain,
+                reserving 1/2 cup broth, and transfer squash to the blender. Add
+                the onions, milk, salt, and reserved broth and puree until
+                completely smooth and creamy. This should yield about 4 cups
+                sauce.
+
+                Pour the pureed sauce over the cooked noodles and add the
+                shredded cheese. Stir to melt the cheese; add water or milk to
+                adjust consistency as needed. Serve with parsley, salt, and
+                pepper to taste.
+              fat: 6.4 g
+              fiber: 4.2 g
+              ingredients: >-
+                2 cups uncooked elbow macaroni - whole wheat, low glycemic,
+                gluten free... any will work!
+
+                1 tablespoon butter
+
+                1 small yellow onion
+
+                1 small butternut squash, (4-5 cups cubed)
+
+                5 cups chicken, or vegetable broth
+
+                3/4 cup milk
+
+                1 teaspoon salt
+
+                2/3 cup shredded cheese - I like Gruyère but any kind will work
+
+                parsley for topping
+
+                salt and pepper to taste
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16821188/eb0cb42155d78b20b3ad3331bcbec2df501d978f-original.jpg?1536264734
+              prepTime: 10
+              private: 'no'
+              protein: 12.5 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16821188'
+              rating: ''
+              servings: 1
+              sodium: 1370.8 mg
+              source: 'https://pinchofyum.com/healthy-mac-and-cheese'
+              sugar: 9.6 g
+              tags: ''
+              title: Healthy Mac and Cheese
+              totalTime: 50
+              url: 'https://pinchofyum.com/healthy-mac-and-cheese'
+              urlHost: pinchofyum.com
+              yield: 4 - 1 heaping cup per serving
+            - id: 35
+              description: >-
+                Honey Chipotle Meatball Meal Prep Bowls are the tastiest way to
+                kick start your new years resolutions! Healthy baked turkey
+                meatballs are tossed in a smoky sweet and savory honey chipotle
+                glaze, and served over cilantro lime cauliflower rice.
+              calories: 427
+              carbohydrate: 47 g
+              cholesterol: 115 mg
+              cookTime: 25
+              cost: ''
+              course: Lunch
+              cuisine: ''
+              directions: >-
+                Turkey Meatballs
+
+                Heat oven to 375°F.
+
+                Line a baking sheet with parchment paper and set aside.
+
+                In a large bowl, mix together the ground turkey, egg,
+                breadcrumbs, worcestershire sauce and salt.
+
+                Form into 1.5 tablespoon meatballs and arrange on the baking
+                sheet.
+
+                Bake for 22-25 minutes, until cooked through. Remove from oven
+                and allow to cool slightly.
+
+                Honey Chipotle Glaze
+
+                In a medium pan, combine the honey, stock, salt, lime juice,
+                adobo sauce and optional chipotle pepper.
+
+                Stir together and cook until completely combined.
+
+                In a small bowl mix the cornstarch with a tablespoon of cold
+                water until no lumps remain. Stir into the pan and continue
+                stirring and simmering until slightly thickened.
+
+                Remove from heat and toss meatballs in the glaze, until coated.
+
+                Cilantro Lime Cauliflower Rice
+
+                In a large pan, heat the olive oil.
+
+                Add the bell pepper and onion, and cook for 3-4 minutes, until
+                slightly softened.
+
+                Add the cauliflower rice, lime zest and salt. Cook for 2-3 more
+                minutes, until cauliflower rice is slightly softened (but not
+                mushy!).
+
+                Stir in the lime juice and cilantro leaves, then remove from the
+                heat.
+
+                Assemble lunch bowls
+
+                Divide the cauliflower rice between four meal prep containers.
+
+                Divide the meatballs between four bowls.
+
+                Drizzle with extra glaze to taste.
+              fat: 18 g
+              fiber: 3 g
+              ingredients: |-
+                1 lb/ 450 g lean ground turkey
+                1 large egg
+                1/2 cup breadcrumbs
+                1 teaspoon worcestershire sauce
+                1/2 teaspoon salt
+                1/2 cup honey
+                1/2 cup chicken stock
+                1/2 teaspoon salt
+                2 tablespoons lime juice
+                4 tablespoons adobo sauce, (from a can of chipotle peppers)
+                1 whole chipotle pepper, (optional- spicy!)
+                1 teaspoon cornstarch
+                1 tablespoon olive oil
+                1 bell pepper, (finely chopped)
+                1/2 red onion, (finely chopped)
+                4 cups riced cauliflower
+                zest 1 lime
+                1/4 teaspoon salt
+                1/2 lime, juice from - (1 tablespoon)
+                1/2 cup cilantro leaves
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16855727/1566f15738627ebb40c3cb119ad7f0ee310861a5-original.jpg?1536496160
+              prepTime: 25
+              private: 'no'
+              protein: 26 g
+              publicUrl: 'https://www.plantoeat.com/recipes/16855727'
+              rating: ''
+              servings: 4
+              sodium: 274 mg
+              source: >-
+                https://sweetpeasandsaffron.com/honey-chipotle-meatball-meal-prep-bowls/
+              sugar: 40 g
+              tags: ''
+              title: Honey Chipotle Meatball Meal Prep Bowls
+              totalTime: 50
+              url: >-
+                https://sweetpeasandsaffron.com/honey-chipotle-meatball-meal-prep-bowls/
+              urlHost: sweetpeasandsaffron.com
+              yield: 4
+            - id: 36
+              description: >-
+                Low Carb Philly Cheesesteak Meal Prep is a fast, simple and
+                flavorful recipe that is made with only 7 ingredients. A
+                gluten-free recipe that comes together in less than 15 minutes
+                and works for lunch or dinner.
+              calories: 310
+              carbohydrate: 10g
+              cholesterol: ''
+              cookTime: 10
+              cost: ''
+              course: Lunch
+              cuisine: American
+              directions: >-
+                Heat oil in a nonstick skillet over medium heat
+
+                Add in meat and cook 2 minutes
+
+                Flip meat and cook for an additional 2 minutes
+
+                Add in onion and peppers
+
+                Cook for 3 minutes or until slightly fork tender
+
+                Add in sliced mushrooms, Worcestershire sauce, salt and pepper
+
+                Cook for 3 more minutes
+
+                Add provolone on top and cover your pan
+
+                Allow cheese to melt
+
+                Remove from the stovetop, allow to cool slightly and then divide
+                between containers
+
+                Top with fresh herbs, if desired
+              fat: 14g
+              fiber: 2g
+              ingredients: >-
+                12 ounces grass fed sirloin steak (or steak of choice (can sub
+                chicken), thinly sliced)
+
+                1/2 tbs olive oil
+
+                1 medium bell pepper, (sliced)
+
+                1 medium onion, (sliced)
+
+                6 ounces portobello mushrooms, (sliced)
+
+                2 tbsp Worcestershire sauce
+
+                3 slices provolone cheese
+
+                salt & pepper, (if desired)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16855745/0fc95ba36afee1da5c79ae27365a8a86724bd1d6-original.jpg?1536496400
+              prepTime: 5
+              private: 'no'
+              protein: 25g
+              publicUrl: 'https://www.plantoeat.com/recipes/16855745'
+              rating: ''
+              servings: 3
+              sodium: ''
+              source: >-
+                https://mealpreponfleek.com/recipe/low-carb-philly-cheese-steak-meal-prep/
+              sugar: ''
+              tags: Lunch
+              title: Low Carb Philly Cheesesteak Meal Prep
+              totalTime: 15
+              url: >-
+                https://mealpreponfleek.com/recipe/low-carb-philly-cheese-steak-meal-prep/
+              urlHost: mealpreponfleek.com
+              yield: 3 meals
+            - id: 37
+              description: >-
+                Quick Teriyaki Chicken Rice Bowls recipe - better than takeout
+                and made with just a few ingredients, this Asian chicken dinner
+                idea is on our weekly rotation! Sweet, garlicky chicken served
+                with rice and steamed broccoli comes together in just 20
+                minutes.
+              calories: 212
+              carbohydrate: ''
+              cholesterol: ''
+              cookTime: 15
+              cost: ''
+              course: Main Course
+              cuisine: Asian
+              directions: >-
+                Cook rice according to instructions on packaging.
+
+                Steam broccoli.
+
+                Season chicken pieces with salt and pepper and place in large
+                non stick skillet.
+
+                Cook until done, stirring often.
+
+                In a small bowl or a measuring cup, combine brown sugar, soy
+                sauce, ginger, garlic, vinegar and cornstarch. Whisk together
+                until there are no cornstarch lumps. Add sauce to chicken and
+                cook stirring constantly, until it thickens into shiny glaze.
+
+                Remove from heat and serve immediately with rice and steamed
+                broccoli.
+              fat: ''
+              fiber: ''
+              ingredients: >-
+                1 lb boneless,, (skinless chicken breast, cut into bite size
+                pieces)
+
+                salt and pepper
+
+                1/4 cup packed light brown sugar
+
+                1/4 cup low-sodium soy sauce
+
+                2 Tablespoons rice, or apple cider vinegar
+
+                1/2 teaspoon ground ginger
+
+                2 cloves garlic, (minced)
+
+                1 Tablespoon cornstarch
+
+                rice
+
+                steamed broccoli
+              mainIngredient: Chicken
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16855806/5ed61d04411aa19e0829543b2d7f750159c2fd22-original.jpg?1536496759
+              prepTime: 5
+              private: 'no'
+              protein: ''
+              publicUrl: 'https://www.plantoeat.com/recipes/16855806'
+              rating: ''
+              servings: 4
+              sodium: ''
+              source: >-
+                https://www.crunchycreamysweet.com/2016/06/06/quick-teriyaki-chicken-rice-bowls-recipe/2/
+              sugar: ''
+              tags: ''
+              title: Quick Teriyaki Chicken Rice Bowls Recipe Card
+              totalTime: 20
+              url: >-
+                https://www.crunchycreamysweet.com/2016/06/06/quick-teriyaki-chicken-rice-bowls-recipe/2/
+              urlHost: crunchycreamysweet.com
+              yield: 4 people
+            - id: 38
+              description: >-
+                These make-ahead freezer breakfast burritos are kid tested and
+                approved! Less than 20 minutes to prep and less than 3 minutes
+                to reheat. Nothing like a yummy, quick, on-the-go breakfast!
+              calories: 377
+              carbohydrate: ''
+              cholesterol: ''
+              cookTime: 3
+              cost: ''
+              course: Breakfast
+              cuisine: American
+              directions: >-
+                Line baking sheet with parchment paper; set aside. Brown sausage
+                in a non-stick skillet over medium heat. Drain on paper towels;
+                set aside. Wipe grease from skillet leaving a thin layer of oil.
+
+                Beat eggs with minced onion and picante sauce in a medium bowl.
+                Scramble eggs in skillet until thoroughly cooked.
+
+                Combine sausage, eggs, and cheese in a large bowl. Add about 2/3
+                cup of egg mixture to center of tortillas. Wrap by folding sides
+                into middle and rolling tightly.
+
+                Place burritos on baking sheet and freeze until solid. Wrap
+                individually in paper towels and place in resealable freezer
+                bag. Store in freezer up to 2 months.
+
+                Reheat burritos by removing from freezer bag, placing on
+                microwave-safe plate, and microwaving for 1 to 2 minutes until
+                heated through.
+              fat: ''
+              fiber: ''
+              ingredients: |-
+                12 oz reduced-fat sausage
+                8 large eggs
+                1 T dry minced onion
+                1/4 cup picante sauce
+                2 cups shredded Monterey Jack cheese
+                12 flour tortillas, burrito size
+                1 pinch Salt & pepper, to taste
+              mainIngredient: Eggs
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/16856915/8cbfcac55a1a1c9d896ad385a253ff57b0b22c4e-original.jpg?1536502652
+              prepTime: 15
+              private: 'no'
+              protein: ''
+              publicUrl: 'https://www.plantoeat.com/recipes/16856915'
+              rating: ''
+              servings: 12
+              sodium: ''
+              source: 'https://www.halfscratched.com/freezer-breakfast-burritos/'
+              sugar: ''
+              tags: ''
+              title: Freezer Breakfast Burritos
+              totalTime: 18
+              url: 'https://www.halfscratched.com/freezer-breakfast-burritos/'
+              urlHost: halfscratched.com
+              yield: 12
+            - id: 44
+              description: >-
+                Our two boys linger around the kitchen when these aromatic
+                cookies are baking. I make this gingerbread cookie recipe
+                throughout the year using a variety of cookie cutters.
+                &mdash;Christy Thelan, Kellog, Iowa
+              calories: 77
+              carbohydrate: 13g
+              cholesterol: 10mg
+              cookTime: 10
+              cost: ''
+              course: Desserts
+              cuisine: ''
+              directions: >-
+                In a large bowl, cream butter and brown sugar until light and
+                fluffy. Add egg and molasses. Combine the flour, ginger, baking
+                soda, cinnamon, cloves and salt; gradually add to creamed
+                mixture and mix well. Cover and refrigerate until easy to
+                handle, about 4 hours or overnight.
+
+                Preheat oven to 350°. On a lightly floured surface, roll dough
+                to 1/8-in. thickness. Cut with floured 2-1/2-in. cookie cutters.
+                Place 1 in. apart on ungreased baking sheets.
+
+                Bake until edges are firm, 8-10 minutes. Remove to wire racks to
+                cool. Tint some of the frosting red and some green; leave
+                remaining frosting plain. 
+
+                Decorate cookies.
+              fat: 2g
+              fiber: 0  g
+              ingredients: |-
+                3/4 cup butter, softened
+                1 cup packed brown sugar
+                1 large egg, room temperature
+                3/4 cup molasses
+                4 cups all-purpose flour
+                2 teaspoons ground ginger
+                1-1/2 teaspoons baking soda
+                1-1/2 teaspoons ground cinnamon
+                3/4 teaspoon ground cloves
+                1/4 teaspoon salt
+                your choice, Vanilla frosting of
+                Red and green paste food coloring
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/17577245/75a0630d9b9869858d51058ca6016808ecdfd2d5-original.jpg?1541941072
+              prepTime: 30
+              private: 'no'
+              protein: 1g
+              publicUrl: 'https://www.plantoeat.com/recipes/17577245'
+              rating: ''
+              servings: 5
+              sodium: 69mg
+              source: 'https://www.tasteofhome.com/recipes/gingerbread-cutout-cookies/'
+              sugar: ''
+              tags: ''
+              title: Gingerbread Cutout Cookies
+              totalTime: 40
+              url: 'https://www.tasteofhome.com/recipes/gingerbread-cutout-cookies/'
+              urlHost: tasteofhome.com
+              yield: 5 dozen.
+            - id: 45
+              description: >-
+                If you’re yearning for a soulful soup, but don’t feel like
+                slaving over the stove, turn to this simple recipe for a mostly
+                homemade seafood “bisque.” First, you’ll sauté chopped shrimp in
+                a saucepan and set aside. Next, in that same pan, you’ll heat a
+                splash of brandy (which gives the soup an earthy complexity), a
+                can of tomato soup, and cream for just five minutes. Ladle the
+                soup into bowls before topping with shrimp and chives. The
+                transformation is pretty incredible. This recipe takes a basic
+                can of soup and morphs it into a satisfying, well-rounded meal.
+                One that comes together in under 20 minutes, too.
+              calories: 511
+              carbohydrate: 37 g
+              cholesterol: 261 mg
+              cookTime: 20
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Melt the butter in a medium saucepan over medium heat. 
+
+                Season shrimp with ½ teaspoon salt and ¼ teaspoon pepper and
+                cook, tossing occasionally, until opaque throughout, 3 to 4
+                minutes; transfer to plate. 
+
+                Add the brandy to the pan, then the tomato soup and the heavy
+                cream, and simmer until heated through and slightly thickened, 4
+                to 5 minutes. 
+
+                Ladle the soup into bowls and top with the shrimp and the
+                chives.
+              fat: 27 g
+              fiber: 2 g
+              ingredients: |-
+                1 tablespoon butter
+                1 pound large shrimp, or peeled and deveined medium, chopped
+                kosher salt and black pepper
+                2 tablespoons brandy
+                2 14.5-ounce can tomato soup
+                1 cup heavy cream
+                1 tablespoon chopped fresh chives
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/17997434/5e584bda698c805237286dd36b817444f325bd77-original.jpg?1544562915
+              prepTime: 15
+              private: 'no'
+              protein: 28 g
+              publicUrl: 'https://www.plantoeat.com/recipes/17997434'
+              rating: ''
+              servings: 4
+              sodium: 1
+              source: >-
+                https://www.realsimple.com/food-recipes/browse-all-recipes/easy-shrimp-bisque-recipe
+              sugar: 20 g
+              tags: ''
+              title: Easy Shrimp Bisque
+              totalTime: 35
+              url: >-
+                https://www.realsimple.com/food-recipes/browse-all-recipes/easy-shrimp-bisque-recipe
+              urlHost: realsimple.com
+              yield: Serves 4
+            - id: 53
+              description: >-
+                A hearty chicken noodle soup recipe. Juicy chicken, tender egg
+                noodles and fresh vegetables all simmered in a flavorful chicken
+                broth.
+              calories: 379
+              carbohydrate: 41 g
+              cholesterol: 78 mg
+              cookTime: 13
+              cost: ''
+              course: Soup
+              cuisine: ''
+              directions: >-
+                Heat olive oil in a pot over medium high heat.
+
+                Chop the onion and add to the pot. Continue adding veggies to
+                the pot in order as you chop them except broccoli.
+
+                Cook until onion is softened, about 5 minutes.
+
+                Stir in seasoning, broth and chicken. Bring to a boil, add
+                noodles reduce heat to medium-high and cook until noodles are
+                tender. Add in broccoli during the last 2 minutes of cooking.
+
+                Stir in parsley and remove bay leaf before serving.
+              fat: 15 g
+              fiber: 4 g
+              ingredients: |-
+                1 tablespoon olive oil
+                1 onion, (diced)
+                2 large carrots, (diced)
+                2 large celery ribs, (sliced)
+                1 red pepper, (finely diced)
+                1 teaspoon poultry seasoning
+                pepper to taste
+                1 bay leaf
+                2 cups chopped cooked chicken
+                6 cups chicken broth, (I prefer homemade)
+                6 oz . egg noodles
+                1 cup broccoli florets
+                2-3 tablespoons fresh parsley
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/18579420/9641be8ef677ad08ab7b7f6e1e90d0f6748f0fb8-original.jpg?1547500791
+              prepTime: 5
+              private: 'no'
+              protein: 19 g
+              publicUrl: 'https://www.plantoeat.com/recipes/18579420'
+              rating: ''
+              servings: 4
+              sodium: 1386 mg
+              source: 'https://www.spendwithpennies.com/homemade-chicken-noodle-soup/'
+              sugar: 5 g
+              tags: ''
+              title: Homemade Chicken Noodle Soup
+              totalTime: 18
+              url: 'https://www.spendwithpennies.com/homemade-chicken-noodle-soup/'
+              urlHost: spendwithpennies.com
+              yield: 4 servings
+            - id: 54
+              description: >-
+                These Ginger Honey Garlic Chicken Tenders are easy to make from
+                scratch and definitely a family favorite! Tender filets of
+                chicken are double dipped, cooked until crisp and tossed in a
+                delicious homemade honey garlic sauce.
+              calories: 432
+              carbohydrate: 61 g
+              cholesterol: 118 mg
+              cookTime: 6
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                Preheat oil to 375 degrees F.
+
+                , Sauce
+
+                Combine sauce ingredients in a small pan. Bring to a boil,
+                reduce heat and simmer about 15 minutes
+
+                , Chicken.
+
+                In a bowl combine flour, Panko bread crumbs, and seasonings. Set
+                aside. In a separate bowl, whisk together eggs, 3 tablespoon
+                water and 1 1/2 tablespoons oil.
+
+                Working with half of the flour mixture at a time (see note
+                below) dip each piece of chicken in the egg mixture and then the
+                flour. Dip it into the egg a second time and then the flour
+                again to double coat it. Gently press the flour into the
+                chicken. Shake off any excess. Place on a wire rack and continue
+                until all chicken is coated.
+
+                Fry chicken in small batches until crispy and cooked through,
+                about 5-6 minutes. Drain on paper towels.
+
+                Place cooked chicken in a large bowl, pour warm sauce over and
+                toss well to coat.
+
+                Top with green onions if desired and serve immediately.
+              fat: 11 g
+              fiber: 1 g
+              ingredients: >-
+                3 boneless skinless chicken breasts, (, sliced into 5-6 slices
+                each)
+
+                2 cups flour
+
+                1/2 cup panko bread crumbs
+
+                1/2 teaspoon garlic powder
+
+                1 teaspoon onion powder
+
+                1 teaspoon paprika
+
+                1/2 teaspoon seasoning salt
+
+                1/2 teaspoon black pepper
+
+                3 eggs
+
+                3 tablespoons water
+
+                1 1/2 tablespoon oil
+
+                oil for frying
+
+                green onions
+
+                1/2 cup honey
+
+                4 tablespoons soy sauce
+
+                4 large garlic cloves, (, crushed)
+
+                1 tablespoon finely diced ginger
+
+                1/2 teaspoon chili flakes
+
+                1/3 cup water
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/18579463/83c41868238632a72d6dffeb2f8476a4019e02f1-original.jpg?1547500924
+              prepTime: 20
+              private: 'no'
+              protein: 21 g
+              publicUrl: 'https://www.plantoeat.com/recipes/18579463'
+              rating: ''
+              servings: 6
+              sodium: 1004 mg
+              source: >-
+                https://www.spendwithpennies.com/honey-garlic-crunch-chicken-tenders/
+              sugar: 24 g
+              tags: ''
+              title: Honey Garlic Crunch Chicken Tenders
+              totalTime: 26
+              url: >-
+                https://www.spendwithpennies.com/honey-garlic-crunch-chicken-tenders/
+              urlHost: spendwithpennies.com
+              yield: 6 servings
+            - id: 57
+              description: ''
+              calories: 212
+              carbohydrate: 23.9g
+              cholesterol: 32.1mg
+              cookTime: 300
+              cost: ''
+              course: Soup
+              cuisine: ''
+              directions: >-
+                In a slow cooker, combine potatoes, chicken broth, soup, onion,
+                and pepper.
+
+                Cover and cook on low for 5-6 hours. If your potatoes are still
+                in big chunks you need to cook it longer. They will start
+                falling apart when it's ready.
+
+                Add the cream cheese and cook 30 minutes or until cream cheese
+                is melted, stirring occasionally, until combined.
+
+                Top with cheese, bacon, or sliced green onions if desired.
+              fat: 11.1g
+              fiber: ''
+              ingredients: |-
+                1 (30 oz.) bag frozen hash-brown potatoes, (I used cubed)
+                2 (14 oz.) cans chicken broth, (see Note)
+                1 (10.75 oz.) can cream of chicken soup
+                1/2 cup chopped onion
+                1/4 teaspoon ground black pepper ((more to taste))
+                1 (8oz) package cream cheese, (softened)
+                Optional Toppings: cheese, (, bacon, sliced green onions)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/18797817/6191a09b4b05ff4d2507d901d3765f7a16cc12c1-original.jpg?1548685169
+              prepTime: 10
+              private: 'no'
+              protein: 5.7g
+              publicUrl: 'https://www.plantoeat.com/recipes/18797817'
+              rating: ''
+              servings: 8
+              sodium: 624.6mg
+              source: 'https://www.the-girl-who-ate-everything.com/creamy-potato-soup'
+              sugar: 2.1g
+              tags: ''
+              title: Creamy Potato Soup
+              totalTime: 310
+              url: 'https://www.the-girl-who-ate-everything.com/creamy-potato-soup'
+              urlHost: the-girl-who-ate-everything.com
+              yield: 8 servings
+            - id: 59
+              description: >-
+                This dish combines the nutty flavor of brown rice with the fresh
+                taste of bell peppers, baby peas, and other vegetables.
+              calories: 299
+              carbohydrate: 36.7 g
+              cholesterol: 0 mg
+              cookTime: 40
+              cost: ''
+              course: Main Course
+              cuisine: ''
+              directions: >-
+                In a saucepan bring water to a boil. Stir in rice. Reduce heat,
+                cover and simmer for 20 minutes.
+
+                Meanwhile, heat peanut oil in a large skillet or wok over medium
+                heat. Add onions, bell pepper, garlic and pepper flakes, to
+                taste. Cook 3 minutes, stirring occasionally.
+
+                Increase heat to medium-high and stir in cooked rice, green
+                onions and soy sauce. Stir-fry for 1 minute. Add peas and cook 1
+                minute more. Remove from heat. Add sesame oil and mix well.
+                Garnish with peanuts, if desired.
+              fat: 14.7 g
+              fiber: ''
+              ingredients: |-
+                3 cups water
+                1 1/2 cups quick-cooking brown rice
+                2 tablespoons peanut oil
+                1 small yellow onion, chopped
+                1 small green bell pepper, chopped
+                1 teaspoon minced garlic
+                1/4 teaspoon red pepper flakes
+                3 green onions, thinly sliced
+                3 tablespoons soy sauce
+                1 cup frozen petite peas
+                2 teaspoons sesame oil
+                1/4 cup roasted peanuts, (optional)
+              mainIngredient: ''
+              nutritionalScoreGeneric: ''
+              photoUrl: >-
+                https://plantoeat.s3.amazonaws.com/recipes/20471025/ec7318049d54ee7f67903e1ad94e890def294aec-original.jpg?1561294756
+              prepTime: 15
+              private: 'no'
+              protein: 8.5 g
+              publicUrl: 'https://www.plantoeat.com/recipes/20471025'
+              rating: ''
+              servings: 4
+              sodium: 731 mg
+              source: 'https://www.allrecipes.com/recipe/21186/vegetable-fried-rice/'
+              sugar: ''
+              tags: ''
+              title: Vegetable Fried Rice
+              totalTime: 55
+              url: 'https://www.allrecipes.com/recipe/21186/vegetable-fried-rice/'
+              urlHost: allrecipes.com
+              yield: ''
+          autoRefresh: true
+          fields:
+            selected_cuisine:
+              type: evalv2
+              value: null
+              connections:
+                - id: result
+                  componentId: g
+              expr: g.result
+              fieldType: string
+          fieldType: array
+          recomputeOnInputChanged: true
+          runnable:
+            type: runnableByName
+            name: Fetch recipes
+            inlineScript:
+              content: '!inline fetch_recipes.inline_script.ts'
+              lock: '!inline fetch_recipes.inline_script.lock'
+              language: bun
+              path: u/henri/recipes_improved/Fetch_recipes
+              schema:
+                $schema: 'https://json-schema.org/draft/2020-12/schema'
+                type: object
+                properties:
+                  selected_cuisine:
+                    type: string
+                    description: ''
+                    default: All
+                required: []
+          subFieldType: object
+        configuration:
+          allEditable:
+            type: static
+            value: false
+          columnDefs:
+            type: static
+            value:
+              - editable: false
+                field: title
+                flex: 3
+                sort: null
+                valueFormatter: null
+              - editable: false
+                field: calories
+                filter: true
+                flex: 1
+                sort: null
+                valueFormatter: null
+              - editable: false
+                field: totalTime
+                filter: true
+                flex: 1
+                sort: asc
+                valueFormatter: null
+          compactness:
+            type: static
+            value: comfortable
+          customActionsHeader:
+            type: static
+          extraConfig:
+            type: static
+            value: {}
+          flex:
+            type: static
+            value: true
+          footer:
+            type: static
+          multipleSelectable:
+            type: static
+            value: false
+          pagination:
+            type: static
+            value: false
+          rowIdCol:
+            type: static
+          rowMultiselectWithClick:
+            type: static
+            value: true
+          selectFirstRowByDefault:
+            type: static
+            value: true
+          wrapActions:
+            type: static
+        customCss:
+          container:
+            class: |-
+              shadow-white
+              shadow-2xl
+              border-white
+              border-2
+            style: ''
+    - '12':
+        fixed: false
+        fullHeight: false
+        h: 8
+        w: 12
+        x: 0
+        'y': 13
+      '3':
+        fixed: false
+        fullHeight: false
+        h: 8
+        w: 2
+        x: 0
+        'y': 22
+      id: i
+      data:
+        id: i
+        type: containercomponent
+        configuration: {}
+        customCss:
+          container:
+            class: |-
+              bg-gray-50
+              rounded
+            style: ''
+        numberOfSubgrids: 1
+  hiddenInlineScripts:
+    - type: runnableByName
+      name: Closest colors
+      autoRefresh: true
+      fields: {}
+      inlineScript:
+        content: '!inline closest_colors.inline_script.ts'
+        lock: '!inline closest_colors.inline_script.lock'
+        language: bun
+        path: u/henri/recipes_improved/Closest_colors
+        schema:
+          $schema: 'https://json-schema.org/draft/2020-12/schema'
+          type: object
+          properties: {}
+          required: []
+      noBackendValue:
+        - id: 1
+          tailwindColor: yellow-300
+        - id: 2
+          tailwindColor: yellow-300
+        - id: 3
+          tailwindColor: red-500
+        - id: 4
+          tailwindColor: green-500
+        - id: 5
+          tailwindColor: green-500
+        - id: 6
+          tailwindColor: red-500
+        - id: 7
+          tailwindColor: red-500
+        - id: 8
+          tailwindColor: red-500
+        - id: 9
+          tailwindColor: red-500
+        - id: 10
+          tailwindColor: yellow-300
+        - id: 11
+          tailwindColor: red-500
+        - id: 12
+          tailwindColor: orange-500
+        - id: 13
+          tailwindColor: red-500
+        - id: 14
+          tailwindColor: yellow-300
+        - id: 15
+          tailwindColor: yellow-300
+        - id: 16
+          tailwindColor: orange-500
+        - id: 17
+          tailwindColor: red-500
+        - id: 18
+          tailwindColor: green-500
+        - id: 19
+          tailwindColor: yellow-300
+        - id: 20
+          tailwindColor: red-500
+        - id: 21
+          tailwindColor: yellow-300
+        - id: 22
+          tailwindColor: red-500
+        - id: 23
+          tailwindColor: red-500
+        - id: 24
+          tailwindColor: red-500
+        - id: 25
+          tailwindColor: red-500
+        - id: 26
+          tailwindColor: red-500
+        - id: 27
+          tailwindColor: green-500
+        - id: 28
+          tailwindColor: red-500
+        - id: 29
+          tailwindColor: yellow-300
+        - id: 30
+          tailwindColor: red-500
+        - id: 31
+          tailwindColor: yellow-300
+        - id: 32
+          tailwindColor: yellow-300
+        - id: 33
+          tailwindColor: yellow-300
+        - id: 34
+          tailwindColor: orange-500
+        - id: 35
+          tailwindColor: teal-500
+        - id: 36
+          tailwindColor: green-500
+        - id: 37
+          tailwindColor: green-500
+        - id: 38
+          tailwindColor: yellow-300
+        - id: 39
+          tailwindColor: white
+        - id: 40
+          tailwindColor: white
+        - id: 41
+          tailwindColor: white
+        - id: 42
+          tailwindColor: white
+        - id: 43
+          tailwindColor: white
+        - id: 44
+          tailwindColor: orange-500
+        - id: 45
+          tailwindColor: yellow-300
+        - id: 46
+          tailwindColor: red-500
+        - id: 47
+          tailwindColor: yellow-300
+        - id: 48
+          tailwindColor: yellow-300
+        - id: 49
+          tailwindColor: orange-500
+        - id: 50
+          tailwindColor: red-500
+        - id: 51
+          tailwindColor: red-500
+        - id: 52
+          tailwindColor: green-500
+        - id: 53
+          tailwindColor: orange-500
+        - id: 54
+          tailwindColor: red-500
+        - id: 55
+          tailwindColor: yellow-300
+        - id: 56
+          tailwindColor: red-500
+        - id: 57
+          tailwindColor: orange-500
+        - id: 58
+          tailwindColor: red-500
+        - id: 59
+          tailwindColor: orange-500
+      recomputeIds: []
+      recomputeOnInputChanged: true
+    - type: runnableByName
+      name: Ingredients based on number of people
+      autoRefresh: true
+      fields:
+        input_string:
+          type: evalv2
+          value: null
+          connections:
+            - id: selectedRow
+              componentId: a
+          expr: a.selectedRow.ingredients
+          fieldType: string
+        multiplier:
+          type: evalv2
+          value: null
+          connections:
+            - id: result
+              componentId: z
+          expr: z.result
+          fieldType: integer
+      inlineScript:
+        content: '!inline ingredients_based_on_number_of_people.inline_script.py'
+        lock: ''
+        language: python3
+        path: u/henri/recipes_improved/Ingredients_based_on_number_of_people
+        schema:
+          $schema: 'https://json-schema.org/draft/2020-12/schema'
+          type: object
+          properties:
+            input_string:
+              type: string
+              description: ''
+              default: null
+            multiplier:
+              type: integer
+              description: ''
+              default: 1
+          required:
+            - input_string
+      noBackendValue: >-
+        2.0 cups dry California Calrose Sushi Rice
+
+        5.0 Tbsp rice vinegar, (, divided)
+
+        2.0 Tbsp granulated sugar
+
+        1/2 tsp salt
+
+        1/4 cup light mayonnaise
+
+        1.0 1/2 Tbsp sriracha
+
+        1/4 cup low-sodium soy sauce
+
+        10.0 oz imitation crab, or lump crabmeat, (, torn or chopped into small
+        bite size pieces)
+
+        1.0 1/2 cups diced English cucumber
+
+        3/4 cup roughly chopped matchstick carrots
+
+        1.0 nori sheet (, chopped or crumbled into small pieces (add more if
+        you'd like))
+
+        1.0 1/2 Tbsp chopped pickled sushi ginger
+
+        1.0 large avocado, (, peeled and diced)
+
+        Black and toasted sesame seeds, (, for garnish)
+      recomputeIds: []
+      recomputeOnInputChanged: true
+  norefreshbar: false
+  subgrids:
+    c-0:
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 5
+          w: 6
+          x: 0
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 4
+          w: 3
+          x: 0
+          'y': 9
+        id: b
+        data:
+          id: b
+          type: imagecomponent
+          configuration:
+            altText:
+              type: static
+              value: ''
+            imageFit:
+              type: static
+              value: cover
+            source:
+              type: evalv2
+              value: /logo.svg
+              connections:
+                - id: selectedRow
+                  componentId: a
+              expr: a.selectedRow.photoUrl
+            sourceKind:
+              type: static
+              value: url
+          customCss:
+            image:
+              class: |-
+                rounded
+                border-8
+              evalClass:
+                type: evalv2
+                connections:
+                  - id: result
+                    componentId: bg_0
+                  - id: selectedRow
+                    componentId: a
+                expr: >-
+                  `border-${bg_0.result.find(item => item.id ===
+                  a.selectedRow.id)?.tailwindColor || 'white'}`
+                fieldType: text
+              style: ''
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 5
+          w: 4
+          x: 7
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 8
+          w: 2
+          x: 1
+          'y': 1
+        id: o
+        data:
+          id: o
+          type: containercomponent
+          configuration: {}
+          customCss:
+            container:
+              class: |-
+                bg-white
+                rounded-2xl
+              style: ''
+          numberOfSubgrids: 1
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 5
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 3
+          w: 1
+          x: 0
+          'y': 2
+        id: 'y'
+        data:
+          id: 'y'
+          type: iconcomponent
+          configuration:
+            color:
+              type: static
+              value: currentColor
+            icon:
+              type: static
+              value: PersonStanding
+            size:
+              type: static
+              value: 24
+            strokeWidth:
+              type: static
+              value: 2
+          customCss:
+            container:
+              class: ''
+              style: ''
+            icon:
+              class: ''
+              style: ''
+          horizontalAlignment: center
+          verticalAlignment: center
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 5
+          x: 1
+          'y': 5
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 3
+          x: 0
+          'y': 13
+        id: z
+        data:
+          id: z
+          type: slidercomponent
+          configuration:
+            defaultValue:
+              type: static
+              value: 1
+            disabled:
+              type: static
+              value: false
+            max:
+              type: static
+              value: 4
+            min:
+              type: static
+              value: 1
+            step:
+              type: static
+              value: 1
+            vertical:
+              type: static
+              value: false
+          customCss:
+            value:
+              class: ''
+              style: ''
+            bar:
+              class: ''
+              style: ''
+            handle:
+              class: ''
+              style: ''
+            limits:
+              class: ''
+              style: ''
+          verticalAlignment: center
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 4
+          x: 7
+          'y': 5
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 0
+        id: d
+        data:
+          id: d
+          type: buttoncomponent
+          componentInput:
+            type: runnable
+            fields: {}
+            fieldType: any
+          configuration:
+            afterIcon:
+              type: static
+              value: ''
+            beforeIcon:
+              type: static
+              value: ''
+            color:
+              type: static
+              value: none
+            confirmationModal:
+              type: oneOf
+              configuration:
+                confirmationModal:
+                  description:
+                    type: static
+                    value: Are you sure?
+                  confirmationText:
+                    type: static
+                    value: Confirm
+                  title:
+                    type: static
+                    value: Title
+                none: {}
+              selected: none
+            disabled:
+              type: static
+              value: false
+            fillContainer:
+              type: static
+              value: false
+            label:
+              type: static
+              value: Recipe
+            onError:
+              type: oneOf
+              configuration:
+                close:
+                  id:
+                    type: static
+                    value: ''
+                errorOverlay: {}
+                gotoUrl:
+                  newTab:
+                    type: static
+                    value: true
+                  url:
+                    type: static
+                    value: ''
+                open:
+                  id:
+                    type: static
+                    value: ''
+                sendErrorToast:
+                  appendError:
+                    type: static
+                    value: true
+                  message:
+                    type: static
+                    value: ''
+                setTab:
+                  setTab:
+                    type: static
+                    value: []
+              selected: errorOverlay
+            onSuccess:
+              type: oneOf
+              configuration:
+                clearFiles:
+                  id:
+                    type: static
+                    value: ''
+                close:
+                  id:
+                    type: static
+                    value: ''
+                closeModal:
+                  modalId:
+                    type: static
+                    value: ''
+                gotoUrl:
+                  newTab:
+                    type: static
+                    value: true
+                  url:
+                    type: evalv2
+                    value: ''
+                    connections:
+                      - id: selectedRow
+                        componentId: a
+                    expr: a.selectedRow.url
+                none: {}
+                open:
+                  id:
+                    type: static
+                    value: ''
+                openModal:
+                  modalId:
+                    type: static
+                    value: ''
+                sendToast:
+                  message:
+                    type: static
+                    value: ''
+                setTab:
+                  setTab:
+                    type: static
+                    value: []
+              selected: gotoUrl
+            size:
+              type: static
+              value: xs
+            triggerOnAppLoad:
+              type: static
+              value: false
+          customCss:
+            button:
+              class: ''
+              evalClass:
+                type: evalv2
+                connections:
+                  - id: result
+                    componentId: bg_0
+                  - id: selectedRow
+                    componentId: a
+                expr: >-
+                  `inline-flex items-center justify-center w-full px-3 py-1
+                  text-base font-bold leading-6 text-white
+                  bg-${bg_0.result.find(item => item.id ===
+                  a.selectedRow.id)?.tailwindColor || 'black'} border
+                  border-transparent rounded-full md:w-auto hover:bg-indigo-500
+                  focus:outline-none focus:ring-2 focus:ring-offset-2
+                  focus:ring-blue-500`
+                fieldType: text
+              style: ''
+            container:
+              class: ''
+              style: ''
+          horizontalAlignment: center
+          recomputeIds: []
+          verticalAlignment: center
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 3
+          x: 0
+          'y': 6
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 1
+        id: f
+        data:
+          id: f
+          type: textcomponent
+          componentInput:
+            type: templatev2
+            connections: []
+            eval: Ingredients
+            expr: ''
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Subtitle
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              evalClass:
+                type: evalv2
+                connections: []
+                expr: ''
+                fieldType: text
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 4
+          w: 11
+          x: 0
+          'y': 7
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 1
+          'y': 0
+        id: e
+        data:
+          id: e
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: result
+                componentId: bg_1
+            eval: 'Hello ${ctx.username}'
+            expr: bg_1.result
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Body
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: |-
+                text-slate-700
+                text-xs
+                font-
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: top
+    i-0:
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 4
+          x: 0
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 0
+        id: j
+        data:
+          id: j
+          type: textcomponent
+          componentInput:
+            type: templatev2
+            connections: []
+            eval: Share recipe with a friend
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Title
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: top
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 6
+          w: 5
+          x: 0
+          'y': 1
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 8
+          w: 3
+          x: 0
+          'y': 1
+        id: l
+        data:
+          id: l
+          type: schemaformcomponent
+          componentInput:
+            type: static
+            value:
+              order:
+                - Gmail Account
+                - To
+                - Subject
+              properties:
+                Gmail Account:
+                  type: object
+                  description: ''
+                  format: resource-gmail
+                Subject:
+                  type: string
+                  description: ''
+                  default: Cool recipe!
+                To:
+                  type: string
+                  description: ''
+                  default: ruben@windmill.dev
+              required: []
+            fieldType: schema
+          configuration:
+            defaultValues:
+              type: static
+              value: {}
+            displayType:
+              type: static
+              value: false
+            dynamicEnums:
+              type: static
+              value: {}
+            largeGap:
+              type: static
+              value: false
+          customCss:
+            description:
+              class: ''
+              style: ''
+            container:
+              class: |-
+                bg-white
+                rounded
+              style: ''
+            label:
+              class: ''
+              style: ''
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 6
+          w: 7
+          x: 5
+          'y': 1
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 8
+          w: 2
+          x: 0
+          'y': 9
+        id: p
+        data:
+          id: p
+          type: containercomponent
+          configuration: {}
+          customCss:
+            container:
+              class: |-
+                border-gray-100
+                border-2
+                rounded
+                bg-white
+              style: ''
+          numberOfSubgrids: 1
+    o-0:
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 0
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 0
+        id: q
+        data:
+          id: q
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: 'Hello ${ctx.username}'
+            expr: 'a.selectedRow.calories ? a.selectedRow.calories : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Subtitle
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: right
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 6
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 1
+          'y': 0
+        id: r
+        data:
+          id: r
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: 'a.selectedRow.ca ? "sugar" : " "'
+            expr: 'a.selectedRow.calories ? "cal" : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Body
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: |-
+                text-sm
+                font-normal
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 0
+          'y': 1
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 2
+          'y': 0
+        id: s
+        data:
+          id: s
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: 'Hello ${ctx.username}'
+            expr: 'a.selectedRow.sugar ? a.selectedRow.sugar : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Subtitle
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: right
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 6
+          'y': 1
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 2
+          'y': 1
+        id: v
+        data:
+          id: v
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: sugar
+            expr: 'a.selectedRow.sugar ? "sugar" : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Body
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: |-
+                text-sm
+                font-normal
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 0
+          'y': 2
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 1
+        id: t
+        data:
+          id: t
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: 'Hello ${ctx.username}'
+            expr: 'a.selectedRow.fiber ? a.selectedRow.fiber : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Subtitle
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: right
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 6
+          'y': 2
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 0
+          'y': 2
+        id: w
+        data:
+          id: w
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: chol.
+            expr: 'a.selectedRow.fiber ? "fiber" : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Body
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: |-
+                text-sm
+                font-normal
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 0
+          'y': 3
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 1
+          'y': 1
+        id: u
+        data:
+          id: u
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: 'Hello ${ctx.username}'
+            expr: 'a.selectedRow.protein ? a.selectedRow.protein : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Subtitle
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: ''
+              style: ''
+          horizontalAlignment: right
+          verticalAlignment: bottom
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 6
+          x: 6
+          'y': 3
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 1
+          'y': 2
+        id: x
+        data:
+          id: x
+          type: textcomponent
+          componentInput:
+            type: evalv2
+            connections:
+              - id: selectedRow
+                componentId: a
+            eval: protein
+            expr: 'a.selectedRow.protein ? "protein" : " "'
+            fieldType: template
+          configuration:
+            copyButton:
+              type: static
+              value: false
+            style:
+              type: static
+              value: Body
+            tooltip:
+              type: static
+              value: ''
+          customCss:
+            container:
+              class: ''
+              style: ''
+            text:
+              class: |-
+                text-sm
+                font-normal
+              style: ''
+          horizontalAlignment: left
+          verticalAlignment: bottom
+    p-0:
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 5
+          w: 10
+          x: 0
+          'y': 0
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 2
+          x: 1
+          'y': 10
+        id: 'n'
+        data:
+          id: 'n'
+          type: textareainputcomponent
+          configuration:
+            defaultValue:
+              type: evalv2
+              connections:
+                - id: selectedRow
+                  componentId: a
+                - id: username
+                  componentId: ctx
+                - id: values
+                  componentId: l
+              expr: >-
+                `Hey
+                ${l.values.To.match(/^[^.@]*/)[0].charAt(0).toUpperCase()}${l.values.To.match(/^[^.@]*/)[0].slice(1)},
+
+
+                You should check out this cool recipe: ${a.selectedRow.url}
+
+
+                It will take you ${a.selectedRow.totalTime} minutes overall.
+
+
+                ${ctx.username.charAt(0).toUpperCase()}${ctx.username.slice(1)}`
+            disabled:
+              type: static
+              value: false
+            placeholder:
+              type: static
+              value: Type...
+          customCss:
+            input:
+              class: border-none
+              style: ''
+      - '12':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 11
+          'y': 4
+        '3':
+          fixed: false
+          fullHeight: false
+          h: 1
+          w: 1
+          x: 1
+          'y': 11
+        id: k
+        data:
+          id: k
+          type: buttoncomponent
+          componentInput:
+            type: runnable
+            autoRefresh: false
+            fields:
+              gmail_auth:
+                type: evalv2
+                value: '$res:u/henri/pro_gmail'
+                allowUserResources: true
+                connections:
+                  - id: 'values["Gmail Account"]'
+                    componentId: l
+                expr: 'l.values["Gmail Account"]'
+                fieldType: object
+                format: resource-gmail
+              message:
+                type: evalv2
+                value: Yoooo
+                connections:
+                  - id: result
+                    componentId: 'n'
+                expr: n.result
+                fieldType: string
+              subject:
+                type: evalv2
+                value: Salut
+                connections:
+                  - id: values
+                    componentId: l
+                expr: l.values.Subject
+                fieldType: string
+              to_email:
+                type: evalv2
+                value: hcourdent@gmail.com
+                connections:
+                  - id: values
+                    componentId: l
+                expr: l.values.To
+                fieldType: string
+              user_id:
+                type: static
+                value: me
+                fieldType: string
+            fieldType: any
+            recomputeOnInputChanged: false
+            runnable:
+              type: runnableByPath
+              name: ' Send Email'
+              path: hub/1408/gmail/_send_email
+              runType: hubscript
+              schema:
+                summary: ' Send Email'
+                schema:
+                  $schema: 'https://json-schema.org/draft/2020-12/schema'
+                  type: object
+                  order:
+                    - gmail_auth
+                    - to_email
+                    - subject
+                    - message
+                    - user_id
+                  properties:
+                    gmail_auth:
+                      type: object
+                      description: ''
+                      default: null
+                      format: resource-gmail
+                    message:
+                      type: string
+                      description: ''
+                      default: null
+                    subject:
+                      type: string
+                      description: ''
+                      default: null
+                    to_email:
+                      type: string
+                      description: ''
+                      default: null
+                    user_id:
+                      type: string
+                      description: ''
+                      default: me
+                  required:
+                    - gmail_auth
+                    - to_email
+                    - subject
+                    - message
+          configuration:
+            afterIcon:
+              type: static
+              value: SendHorizontal
+            beforeIcon:
+              type: static
+              value: ''
+            color:
+              type: static
+              value: dark
+            confirmationModal:
+              type: oneOf
+              configuration:
+                confirmationModal:
+                  description:
+                    type: static
+                    value: Are you sure?
+                  confirmationText:
+                    type: static
+                    value: Confirm
+                  title:
+                    type: static
+                    value: Title
+                none: {}
+              selected: none
+            disabled:
+              type: static
+              value: false
+            fillContainer:
+              type: static
+              value: false
+            label:
+              type: static
+              value: ''
+            onError:
+              type: oneOf
+              configuration:
+                close:
+                  id:
+                    type: static
+                    value: ''
+                errorOverlay: {}
+                gotoUrl:
+                  newTab:
+                    type: static
+                    value: true
+                  url:
+                    type: static
+                    value: ''
+                open:
+                  id:
+                    type: static
+                    value: ''
+                sendErrorToast:
+                  appendError:
+                    type: static
+                    value: true
+                  message:
+                    type: static
+                    value: ''
+                setTab:
+                  setTab:
+                    type: static
+                    value: []
+              selected: errorOverlay
+            onSuccess:
+              type: oneOf
+              configuration:
+                clearFiles:
+                  id:
+                    type: static
+                    value: ''
+                close:
+                  id:
+                    type: static
+                    value: ''
+                closeModal:
+                  modalId:
+                    type: static
+                    value: ''
+                gotoUrl:
+                  newTab:
+                    type: static
+                    value: true
+                  url:
+                    type: static
+                    value: ''
+                none: {}
+                open:
+                  id:
+                    type: static
+                    value: ''
+                openModal:
+                  modalId:
+                    type: static
+                    value: ''
+                sendToast:
+                  message:
+                    type: static
+                    value: ''
+                setTab:
+                  setTab:
+                    type: static
+                    value: []
+              selected: none
+            size:
+              type: static
+              value: xs
+            triggerOnAppLoad:
+              type: static
+              value: false
+          customCss:
+            button:
+              class: ''
+              style: ''
+            container:
+              class: ''
+              style: ''
+          horizontalAlignment: center
+          recomputeIds: []
+          verticalAlignment: center
+  theme:
+    type: inlined
+    css: ''
+  unusedInlineScripts: []
+policy:
+  execution_mode: publisher
+  s3_inputs: []
+  triggerables_v2:
+    'a:rawscript/5a7460d9f22d96e3c5859056b1e73ff647922b92262dff96bc6d5f8d14b813b7':
+      allow_user_resources: []
+      one_of_inputs:
+        selected_cuisine:
+          - All
+          - Asian
+          - American
+          - Italian
+      static_inputs: {}
+    'bg_0:rawscript/de62aa35468535d2025b4b7a40fe75f8627da32c3a15ac0e20b55eb35101c772':
+      allow_user_resources: []
+      one_of_inputs: {}
+      static_inputs: {}
+    'bg_1:rawscript/e110049ac5f1e2e2089dc129d206a18978c029f5bf3ac0aee32ba5eb3fd9e6a6':
+      allow_user_resources: []
+      one_of_inputs: {}
+      static_inputs: {}
+    'k:script/hub/1408/gmail/_send_email':
+      allow_user_resources:
+        - gmail_auth
+      one_of_inputs: {}
+      static_inputs:
+        user_id: me
