@@ -1,0 +1,131 @@
+summary: Fetch HackerNews stories summarize content send Slack
+description: ''
+value:
+  modules:
+    - id: a
+      summary: Fetch HackerNews top story
+      value:
+        type: rawscript
+        content: '!inline fetch_hackernews_top_story.inline_script.ts'
+        input_transforms: {}
+        lock: '!inline fetch_hackernews_top_story.inline_script.lock'
+        language: bun
+    - id: h
+      value:
+        type: forloopflow
+        modules:
+          - id: i
+            summary: Fetch URL content
+            value:
+              type: rawscript
+              content: '!inline fetch_url_content.inline_script.ts'
+              input_transforms:
+                url:
+                  type: javascript
+                  expr: flow_input.iter.value.url
+              lock: '!inline fetch_url_content.inline_script.lock'
+              language: bun
+          - id: k
+            summary: ''
+            value:
+              type: branchone
+              branches:
+                - summary: ''
+                  modules:
+                    - id: l
+                      summary: Return blog message
+                      value:
+                        type: rawscript
+                        content: '!inline return_blog_message.inline_script.ts'
+                        input_transforms:
+                          by:
+                            type: javascript
+                            expr: flow_input.iter.value.by
+                          score:
+                            type: javascript
+                            expr: flow_input.iter.value.score
+                          title:
+                            type: javascript
+                            expr: flow_input.iter.value.title
+                          url:
+                            type: javascript
+                            expr: flow_input.iter.value.url
+                        lock: '!inline return_blog_message.inline_script.lock'
+                        language: bun
+                      continue_on_error: false
+                  expr: flow_input.iter.value.url.toLowerCase().includes('blog')
+                  parallel: true
+                  skip_failure: true
+              default:
+                - id: m
+                  summary: Summarize with OpenAI
+                  value:
+                    type: rawscript
+                    content: '!inline summarize_with_openai.inline_script.ts'
+                    input_transforms:
+                      content:
+                        type: javascript
+                        expr: results.i.content
+                      by:
+                        type: javascript
+                        expr: flow_input.iter.value.by
+                      openai_resource:
+                        type: javascript
+                        expr: flow_input.openai_resource
+                      score:
+                        type: javascript
+                        expr: flow_input.iter.value.score
+                      title:
+                        type: javascript
+                        expr: flow_input.iter.value.title
+                      url:
+                        type: javascript
+                        expr: flow_input.iter.value.url
+                    lock: '!inline summarize_with_openai.inline_script.lock'
+                    language: bun
+                  continue_on_error: false
+        iterator:
+          type: javascript
+          expr: results.a
+        parallel: false
+        skip_failures: true
+    - id: d
+      summary: ''
+      value:
+        type: script
+        input_transforms:
+          channel:
+            type: javascript
+            expr: flow_input.slack_channel
+          slack:
+            type: javascript
+            expr: flow_input.slack_resource
+          text:
+            type: javascript
+            expr: "`\U0001F5DE️ *Top 5 HackerNews Stories Summary*\n${results.h.map((story, index) => \n  `*${index + 1}. ${story.title}*\n\U0001F517 ${story.url}\n\U0001F4DD ${story.summary}\n\U0001F464 By: ${story.by} | \U0001F525 Score: ${story.score}\n`\n).join('\\n')}`"
+        is_trigger: false
+        path: hub/19700/slack/send_message_to_channel
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  order:
+    - openai_resource
+    - slack_resource
+    - slack_channel
+  properties:
+    openai_resource:
+      type: object
+      description: OpenAI resource for text summarization
+      format: resource-openai
+    slack_channel:
+      type: string
+      description: 'Slack channel to send the summary to (e.g., #general)'
+      default: '#general'
+    slack_resource:
+      type: object
+      description: Slack resource for sending messages
+      format: resource-slack
+  required:
+    - openai_resource
+    - slack_resource
+    - slack_channel
