@@ -1,0 +1,19 @@
+description: ''
+args:
+  channel: test
+  message: Spamming
+  slack: '$res:u/henri/personal_slack'
+cron_version: v2
+email: henri@windmill.dev
+enabled: false
+is_flow: false
+no_flow_overlap: false
+on_failure_exact: false
+on_failure_times: 1
+on_recovery_extra_args: {}
+on_recovery_times: 1
+on_success_extra_args: {}
+schedule: 0/10 * * * * *
+script_path: f/all/slack_message_demo
+timezone: Europe/Paris
+ws_error_handler_muted: false

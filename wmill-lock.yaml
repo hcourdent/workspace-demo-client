@@ -7,7 +7,7 @@ locks:
     return_blog_message.inline_script.ts: a7a9ff69fdbe1bcae18989bde2284683612013152dd90ada14e2d73f53a33cf6
     summarize_with_openai.inline_script.ts: 1cf25b761c1dec9d93f24dc5309483a6f9de62056e80a8f548bdf08d47c92777
   f/all/load_display_s3_file_content: 0d119382eeeaf1833ad81e02ca9eca09b835c7790a29c26b2a460d26cb1c010e
-  f/all/slack_message_demo: 15002a8384d00aed53758b678d6ab1e0ff625ee2efcc33f01723d344798feaf9
+  f/all/slack_message_demo: 6561857b77d9b19103ba6c04cabed25598d261cfc03d0aa32255023fd90221f2
   f/data_team/workflow_as_code: 48529bfe482f8b3663beeb9b260c4db3c0b4361397e82231eaf989274e24a748
   f/examples_etl/run_all_polars.flow:
     __flow_hash: faf999a9d9907e51d85450ee23f6a5d68f2bfe85d402549951cab6c33a0d2f35

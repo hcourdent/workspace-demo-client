@@ -1,6 +1,6 @@
 import * as wmill from "windmill-client"
 
-// adding stuff
+// adding stuff from VS Code
 
 export async function main(
   slack: RT.Slack,
