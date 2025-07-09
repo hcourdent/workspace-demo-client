@@ -2,5 +2,6 @@ summary: null
 display_name: demo_folder
 extra_perms:
   u/henri: true
+  u/hugo: false
 owners:
   - u/henri
