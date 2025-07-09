@@ -1,7 +1,8 @@
 summary: null
 display_name: demo_folder
 extra_perms:
+  g/bd_team: false
   u/henri: true
-  u/hugo: false
+  u/hugo: true
 owners:
   - u/henri
